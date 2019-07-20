@@ -1,6 +1,11 @@
 @import 'core/_variables';
+@import 'layout/container';
 @import 'components/landing';
+@import 'components/cards-img-section';
 
 
 
 
+*{
+  margin:0;
+}
