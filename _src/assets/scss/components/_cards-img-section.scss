@@ -1,4 +1,45 @@
 .cards__img-section{
+  /* Cambiar por variable*/
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   padding: 38px 0 40px;
+
+}
+.cards__img-wrapper{
+  width:100%;
+  background-color: white;
+  padding-top: 21px;
+  box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0  rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+}
+.img__text-box{
+  border-left: solid 5px $dirty-blue;
+  padding: 0 20px 0 14px;
+  margin-bottom:10px;
+}
+
+.img__title{
+  margin-bottom:4px;
+}
+.cards__img{
+  background-image: url(https://thispersondoesnotexist.com/image);
+  min-height:200px;
+  height:100%;
+  width:100%;
+  @include bg-img();
+}
+.img__icons-box{
+  padding: 10px 0 12px 20px;
+}
+
+.icons__list{
+  @include clear-list();
+  display:flex;
+}
+.icons__item{
+  border:solid 2px $hospital-green;
+  border-radius:50%;
+  margin-right: 10px;
+  height:32px;
+  width:32px;
+  @include center;
 }
