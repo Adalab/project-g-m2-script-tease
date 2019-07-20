@@ -4,16 +4,17 @@
  font-size:14px;
  color:#54585a;
  border-style:none;
- border-bottom:solid 2px #d8d8d8;
+ border-bottom:solid 1px #d8d8d8;
 }
 
 // div de cabecera
 
-.form__fieldset-head {
+.form__fieldset-wrapper {
   display:flex;
   justify-content:space-between;
   align-items: center;
   text-transform:uppercase;
+
 }
 
 .form__fieldset-head-container {
@@ -61,7 +62,7 @@
 
 // div dentro del fieldset
 
-.form__fieldset-add_img {
+.form__fieldset-add_img_wrapper {
   display:grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
