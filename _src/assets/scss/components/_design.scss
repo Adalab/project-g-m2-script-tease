@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 320px;
+}
+/*Tipografía y colores*/
+.design{
+  color: #54585a;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+}
+.desing__title{
+ font-weight: 600;
+ font-size: 18px;
+}
+.design__subtitle{
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/*Botón*/
+.fa-angle-up{
+  width: 16px;
+  height: 18px;
+}
+
+/*Listas de colores*/
+.colors__list{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 75px;
+}
+/*Tamaño de containers*/
+.container__color {
+  width: 30px;
+  height: 25px;
+}
+
+/*Op.1 Paleta de azules*/
+.container__dark-green-blue {
+  background-color: #114e4e;
+}
+.container__dirty-blue{
+  background-color: #438792;
+}
+.container__hospital-green{
+  background-color: #a2deaf;
+}
+/*Op.2 Paleta de rojos*/
+.container__board{
+  background-color: #420101;
+}
+.container__red{
+  background-color: #bd1010;
+}
+.container__orange{
+  background-color:#e95626;
+}
+/*Op.3 Paleta de "amarillos" ¿BEA qué paleta es?*/
+.container__grey{
+  background-color: #3e5b65;
+}
+.container__yellow{
+  background-color: #eab052;
+}
+.container__lightblue{
+  background-color: #a0c0cf;
+}
+/*Alineación*/
+.colors__container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.titleandbutton__container{
+  display: flex;
+  justify-content: space-between;
+}
