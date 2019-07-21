@@ -1,5 +1,16 @@
 @import 'core/_variables';
-@import 'components/landing';
+@import 'components/_landing';
+@import 'components/_header.scss';
+@import 'components/_landing-main.scss';
+@import 'components/_footer.scss';
+body{
+  box-sizing: border-box;
+  margin: 0px 0px;
+}
+*{
+  margin: 0px;
+}
+
 
 
 
