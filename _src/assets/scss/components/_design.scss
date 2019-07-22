@@ -20,7 +20,8 @@
 .design__subtitle{
   font-weight: normal;
   font-size: 14px;
-  display: inline;
+  display: block;
+  transform: translateY(22px);
 }
 
 .content-colors__container{
@@ -32,7 +33,7 @@
   display: flex;
 }
 .fa-object-ungroup{
-color: $dull-orange;
+color: $color-fieldset-icon;
 font-size: 18px;
 }
 .button {
@@ -43,7 +44,7 @@ font-size: 18px;
   }
 }
 .fa-angle-up{
-color: $intermediate-grey;
+color: $color-card-img-section-p;
 font-size: 18px;
 font-weight: normal;
 }
