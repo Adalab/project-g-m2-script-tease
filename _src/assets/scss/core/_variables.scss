@@ -34,3 +34,50 @@ $hospital-green: #a2deaf;
 
 $color__img-title: $dark-green-blue;
 $color__img-button: $grey;
+
+//lo de ayelen//
+/*OpenSans
+OpenSans-SemiBold
+OpenSans-SemiBold
+Montserrat-Bold
+Montserrat-Regular*/
+$Montserrat: 'Montserrat', sans-serif;
+$OpenSans:'Open Sans', sans-serif;
+/*$OpenSans:;*/
+
+/*COLORS*/
+$black: #000000;
+$dirty-blue: #438792;
+$hospital-green: #a2deaf;
+$dull-orange: #e17334;
+$pale-grey: #dde9ed;
+$dark-green-blue: #114e4e;
+$dirty-blue: #438792;
+$light-khaki: #f9f4dc;
+$silver: #bfcdd0;
+$black-20: rgba(0, 0, 0, 0.2);
+$white: white;
+$grey: #f5f5f5;
+$dark-grey: #6b6b6b;
+$intermediate-grey: #54585a;
+$twittwe-blue:#00a0f5;
+
+/*Colors landing section*/
+
+$color-landing-h2: $dull-orange;
+$color-landing-p: $dark-green-blue;
+$color-landing-list-border: $dull-orange;
+$color-landing-button-text: $white;
+$color-landing-button-bg: $dirty-blue;
+$color-landing-bg: $grey;
+$color-copy: $dark-grey;
+
+/*Colors card section*/
+
+$color-card-img-section-bg: linearGradient(to bottom $silver, to $pale-grey);
+$color-card-img-section-h2: $dark-green-blue;
+$color-card-img-section-p: $intermediate-grey;
+$color-card-img-section-border: $dirty-blue;
+$color-card-img-section-border-icon: $hospital-green;
+$color-card-img-section-icon: $dark-green-blue;
+$color-fieldset-icon: $dull-orange;
