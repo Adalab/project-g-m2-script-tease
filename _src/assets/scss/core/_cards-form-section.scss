@@ -4,7 +4,7 @@
   font-size:14px;
   color:#54585a;
   border-style:none;
-  border-bottom:solid 1px #d8d8d8;
+  // border-bottom:solid 1px #d8d8d8;
  }
 
  // div de cabecera
@@ -18,17 +18,27 @@
 
  .form__fieldset-head-container {
    display:flex;
-   align-items: center;
-   justify-content:baseline;
+   justify-content:center;
+   align-items: baseline;
  }
 
- .far  {
-   color:orange;
+ .form__fieldset-main_title {
+   font-size:18px;
+   padding: 0 0 0 10px;
  }
 
- .form__fieldset-button{
-   width:25px;
-   border-style:none;
+ .fa-keyboard  {
+   font-size:18px;
+   color:#e17334;
+ }
+
+.form__fieldset-button {
+  border-style:none;
+}
+
+ .fa-chevron-up{
+   font-size:18px;
+   color: #54585a;
  }
 
  // div fieldset
@@ -46,7 +56,7 @@
  .form__fieldset-content-gap {
    box-sizing: border-box;
    width: 100%;
-   height:20px;
+   height:30px;
    margin:0 0 18px;
    border:solid 1px #a2deaf;
    color:#c5c5c5;
@@ -64,6 +74,7 @@
    grid-template-columns: auto 1fr;
    grid-template-rows: auto auto;
    grid-column-gap:15px;
+   grid-row-gap:8px;
    font-family:'Open Sans', sans-serif;
    font-size:14px;
    color:#114e4e;
@@ -71,9 +82,9 @@
  }
 
  .form__fieldset-add_img-text {
- grid-column:1/3;
- text-align:left;
- margin:0;
+    grid-column:1/3;
+    text-align:left;
+    margin:0;
  }
 
  .form__fieldset-add_img-button {
@@ -83,6 +94,7 @@
    width:140px;
    height:30px;
    background-color:#e17334;
+   border-style:none;
    border-radius:8px;
  }
 
@@ -90,5 +102,10 @@
    border:solid 1px #a2deaf;
    width:30px;
    height:30px;
+ }
+
+ .line-bottom {
+   margin: 10px 0 10px;
+  border-bottom:solid 1px #d8d8d8;
  }
 
