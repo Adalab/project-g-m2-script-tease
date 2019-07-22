@@ -2,31 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 320px;
 }
-/*Tipografía y colores*/
+.container{
+  margin: 30px 20px;
+}
 .design{
-  color: #54585a;
-  font-family: 'Open Sans', sans-serif;
+  color: $intermediate-grey;
+  font-family: $OpenSans;
   text-transform: uppercase;
   background: linear-gradient(to bottom, #f5f5f5, #ffffff);
 }
 .desing__title{
  font-weight: 600;
  font-size: 18px;
+ margin-left: 10px;
 }
 .design__subtitle{
   font-weight: normal;
   font-size: 14px;
+  display: inline;
 }
 
-/*Botón*/
+.content-colors__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-icon{
+  display: flex;
+}
+.fa-object-ungroup{
+color: $dull-orange;
+font-size: 18px;
+}
+.button {
+  border: none;
+  background-color: transparent;
+  &:visited{
+    border: none;
+  }
+}
 .fa-angle-up{
-  width: 16px;
-  height: 18px;
+color: $intermediate-grey;
+font-size: 18px;
+font-weight: normal;
 }
-
-/*List*/
 .list__item {
   width: 30px;
   height: 1px;
@@ -36,41 +56,13 @@
 .colors__list{
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  margin: 0 0 0 10px;
+}
+.colors__row {
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
-.ro
-
-
-
-/*Op.2 Paleta de rojos
-.container__board{
-  background-color: #420101;
+.op2__container {
+  margin: 20px 0;
 }
-.container__red{
-  background-color: #bd1010;
-}
-.container__orange{
-  background-color:#e95626;
-}
-
-.container__grey{
-  background-color: #3e5b65;
-}
-.container__yellow{
-  background-color: #eab052;
-}
-.container__lightblue{
-  background-color: #a0c0cf;
-}
-Alineación
-.colors__container{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.titleandbutton__container{
-  display: flex;
-  justify-content: space-between;
-}*/
-
