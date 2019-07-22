@@ -1,16 +1,29 @@
-@import 'core/_variables';
+@import 'core/_variables.scss';
 @import 'core/buttons';
 @import 'core/typography';
 @import 'core/mixins';
 @import 'layout/container';
-@import 'components/landing';
+@import 'components/_landing.scss';
+@import 'components/_header.scss';
+@import 'components/_landing-main.scss';
+@import 'components/_footer.scss';
 @import 'components/cards-img-section';
-
-
-
 
 
 *{
   margin:0;
   box-sizing: border-box;
 }
+.container-page{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: (1fr 1fr);
+}
+.container-header-main{
+  grid-row:1fr;
+}
+
+
+
+
+

@@ -1,0 +1,21 @@
+.landing__header{
+  @include bg-img();
+  padding-top: 95px;
+  background-color: $color-landing-bg;
+
+}
+.landing__header .container{
+ @include centered();
+ margin: 0 35px;
+
+}
+
+.landing__header-title{
+ width: 250px;
+ height: 1px;
+ overflow: hidden;
+ background-image:url("/assets/images/tarjetalogo.svg");
+ background-size: cover;
+ padding-top: 64px;
+}
+
