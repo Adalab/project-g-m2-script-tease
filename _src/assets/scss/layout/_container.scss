@@ -1,6 +1,10 @@
 .container{
   margin:0 20px;
+  box-sizing: border-box;
 }
 .cards__img-section .container{
   margin: 0 35px 0 45px;
+}
+.landing__main .container{
+  margin: 0 35px;
 }
