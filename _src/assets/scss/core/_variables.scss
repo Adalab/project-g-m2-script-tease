@@ -49,7 +49,7 @@ $color-copy: $dark-grey;
 
 /*Colors card section*/
 
-$color-card-img-section-bg: linearGradient(to bottom $silver, to $pale-grey);
+$color-card-img-section-bg: linear-gradient(to bottom, $silver,  $pale-grey);
 $color-card-img-section-h2: $dark-green-blue;
 $color-card-img-section-p: $intermediate-grey;
 $color-card-img-section-border: $dirty-blue;

@@ -1,6 +1,7 @@
 .cards__img-section{
   /* Cambiar por variable*/
-  background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background: $color-card-img-section-bg;
+  @include centered();
 }
 .cards__img-section .container{
   padding: 38px 0 40px;
