@@ -1,7 +1,7 @@
 .landing__main {
   min-height: 330px;
   padding-top: 36px;
-  background-color: #f5f5f5;
+  background-color: $color-landing-bg;
   position: relative;
 }
 .landing__main .container{
@@ -9,14 +9,14 @@
   flex-direction: column;
 }
 .landing__main-title {
-  color: #e17334;
-  font-size: 19px;
+  color: $color-landing-h2;
+  font-size: $font-md;
   text-align: center;
 }
 .landing__main-paragraph {
   width: 265px;
-  color: 1144ee;
-  font-size: 12px;
+  color: $color-landing-p;
+  font-size: $font-xs;
   text-align: center;
   font-family: $OpenSans;
 }
@@ -27,12 +27,12 @@
   padding-inline-end: 20px;
   display: flex;
   justify-content: center;
-  border: #e17334 solid 1px;
+  border: $color-landing-list-border solid 1px;
 }
 .landing__main-li {
 
   text-align: center;
-  color: #e17334;
+  color: $dull-orange;
   width: 60px;
   margin-right: 24px;
   font-family: $OpenSans;
@@ -59,11 +59,11 @@
   @include centered();
   width: 129px;
   height: 42px;
-  background-color: #438792;
+  background-color: $color-landing-button-bg;
   text-decoration: none;
-  color: #ffffff;
+  color: $color-landing-button-text;
   border-radius: 21px;
-  font-size: 16px;
+  font-size: $font-sm;
   font-family: $OpenSans;
   position: absolute;
   left: 50%;
