@@ -1,8 +1,9 @@
 .cards__img-section{
   /* Cambiar por variable*/
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+}
+.cards__img-section .container{
   padding: 38px 0 40px;
-
 }
 .cards__img-wrapper{
   width:240px;
@@ -25,6 +26,14 @@
   height:200px;
   width:240px;
   @include bg-img();
+  position:relative;
+}
+.image{
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  top: -1px;
+  overflow:hidden;
 }
 .img__icons-box{
   padding: 10px 0 12px 20px;
@@ -33,6 +42,10 @@
 .icons__list{
   @include clear-list();
   display:flex;
+}
+.icon__anchor{
+  text-decoration: none;
+  color:inherit;
 }
 .icons__item{
   border:solid 2px $hospital-green;
