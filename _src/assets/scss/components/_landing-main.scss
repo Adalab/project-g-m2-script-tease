@@ -1,12 +1,11 @@
 .landing__main {
-  height: 100vh;
   min-height: 330px;
   padding-top: 36px;
   background-color: #f5f5f5;
   padding: 0px 35px;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   position: relative;
 }
 .landing__main-title {
@@ -31,11 +30,15 @@
   border: #e17334 solid 1px;
 }
 .landing__main-li {
+
   text-align: center;
   color: #e17334;
   width: 60px;
   margin-right: 24px;
   font-family: $OpenSans;
+}
+.landing__-logo{
+  text-align: center;
 }
 .li-share {
   margin-right: 0px;

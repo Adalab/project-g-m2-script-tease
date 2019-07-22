@@ -10,6 +10,14 @@ body{
 *{
   margin: 0px;
 }
+.container-page{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: (1fr 1fr);
+}
+.container-header-main{
+  grid-row:1fr;
+}
 
 
 
