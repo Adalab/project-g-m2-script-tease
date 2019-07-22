@@ -21,7 +21,8 @@
   font-family: $OpenSans;
 }
 .landing__main-list {
-  list-style: none;
+
+  @include clear-list();
   margin-top: 18px;
   padding-inline-start: 20px;
   padding-inline-end: 20px;

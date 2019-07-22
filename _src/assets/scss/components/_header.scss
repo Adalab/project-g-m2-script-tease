@@ -1,5 +1,5 @@
 .landing__header{
-
+  @include bg-img();
   padding-top: 95px;
   background-color: $color-landing-bg;
 
