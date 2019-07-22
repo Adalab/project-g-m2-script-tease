@@ -1,14 +1,18 @@
-@import 'core/_variables';
-@import 'components/_landing';
+@import 'core/_variables.scss';
+@import 'components/_landing.scss';
 @import 'components/_header.scss';
 @import 'components/_landing-main.scss';
 @import 'components/_footer.scss';
-body{
-  box-sizing: border-box;
-  margin: 0px 0px;
-}
+@import 'core/buttons';
+@import 'core/typography';
+@import 'core/mixins';
+@import 'layout/container';
+@import 'components/cards-img-section';
+
+
 *{
-  margin: 0px;
+  margin:0;
+  box-sizing: border-box;
 }
 .container-page{
   min-height: 100vh;

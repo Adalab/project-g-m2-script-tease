@@ -1,0 +1,25 @@
+/* Typographies */
+
+.img-btn__text{
+  font-family: $OpenSans;
+  font-size: $font-xs;
+  /*poner en variable */
+  color: $color__img-button;
+  text-transform: uppercase;
+}
+
+.img-text__title{
+  font-family: $Montserrat;
+  font-weight: $font-weight-bold;
+  font-size: $font-md;
+  line-height: $line-height-md;
+  color: $color__img-title;
+}
+
+.img-text__subtitle{
+  font-family: $Montserrat;
+  font-weight: $font-weight-normal;
+  font-size: $font-sm;
+  line-height: $line-height-md;
+  color: $color__img-button;
+}

@@ -1,3 +1,6 @@
+
+/*FONTS*/
+
 /*OpenSans
 OpenSans-SemiBold
 OpenSans-SemiBold
@@ -6,3 +9,28 @@ Montserrat-Regular*/
 $Montserrat: 'Montserrat', sans-serif;
 $OpenSans:'Open Sans', sans-serif;
 /*$OpenSans:;*/
+
+$font-md: 18px;
+$font-sm:16px;
+$font-xs: 12px;
+
+
+$line-height-md: 20px;
+
+
+$font-weight-normal:normal;
+$font-weight-bold: 700;
+
+
+/*COLORS*/
+
+$dark-green-blue: #114e4e;
+$grey:#54585a;
+$black-20: rgba(0, 0, 0, 0.2);
+$dirty-blue:#438792;
+$hospital-green: #a2deaf;
+
+
+
+$color__img-title: $dark-green-blue;
+$color__img-button: $grey;
