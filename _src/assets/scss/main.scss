@@ -9,7 +9,7 @@
 @import 'components/design';
 @import 'components/_footer.scss';
 @import 'components/cards-img-section';
-
+@import 'core/_cards-form-section.scss';
 
 *{
   margin:0;
@@ -23,6 +23,7 @@
 .container-header-main{
   grid-row:1fr;
 }
+
 
 
 
