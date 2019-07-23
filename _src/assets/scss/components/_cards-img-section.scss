@@ -13,6 +13,20 @@
   box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0  rgba(0, 0, 0, 0.35);
   border-radius: 2px;
 }
+.reset{
+  position: relative;
+  color: $color-card-img-section-p;
+}
+.reset:before{
+  content:"\f2ed";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: "Font Awesome 5 pro";
+  font-weight: 600;
+  color: $color-card-img-section-p;
+
+}
 // La caja que contiene el nombre y la profesión.
 .img__text-box{
   border-left: solid 5px $dirty-blue;
