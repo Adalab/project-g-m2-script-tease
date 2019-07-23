@@ -1,0 +1,37 @@
+.fieldset{
+  border: none;
+}
+.share__fieldset{
+  color: $intermediate-grey;
+  font-family: $OpenSans;
+  text-transform: uppercase;
+}
+
+.container{
+  margin: 30px 20px;
+  border: 0px 1px;
+}
+
+.content__share-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share__title-icon{
+  @include centered ();
+}
+
+.fa-share-alt{
+  color: $dull-orange;
+}
+
+.share__title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+
+
+
