@@ -1,11 +1,11 @@
 .cards__img-section{
-  /* Cambiar por variable*/
   background: $color-card-img-section-bg;
   @include centered();
 }
 .cards__img-section .container{
   padding: 38px 0 40px;
 }
+// La caja que contiene, texto, imagen  botón e iconos.
 .cards__img-wrapper{
   width:240px;
   background-color: white;
@@ -13,33 +13,32 @@
   box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0  rgba(0, 0, 0, 0.35);
   border-radius: 2px;
 }
+// La caja que contiene el nombre y la profesión.
 .img__text-box{
   border-left: solid 5px $dirty-blue;
-  padding: 0 20px 0 14px;
+  padding: 0 20px 0 9px;
   margin-bottom:10px;
 }
-
 .img__title{
   margin-bottom:4px;
 }
 .cards__img{
   background-image: url(https://thispersondoesnotexist.com/image);
   height:200px;
-  width:240px;
   @include bg-img();
   position:relative;
 }
+// Para ocultar la imagen de usuario por si nos da un error. o el formato no es el adecuado.
 .image{
   position: absolute;
   height: 1px;
   width: 1px;
-  top: -1px;
+  top: -10px;
   overflow:hidden;
 }
 .img__icons-box{
   padding: 10px 0 12px 20px;
 }
-
 .icons__list{
   @include clear-list();
   display:flex;
