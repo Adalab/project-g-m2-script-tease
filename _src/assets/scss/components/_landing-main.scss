@@ -7,6 +7,7 @@
 .landing__main .container{
   @include centered();
   flex-direction: column;
+  margin: 35px;
 }
 .landing__main-title {
   color: $color-landing-h2;
@@ -25,6 +26,7 @@
   margin-top: 18px;
   padding: 10px 20px 15px;
   display: flex;
+  // height: 44px;
   justify-content: center;
   align-items: center;
   border: $color-landing-list-border solid 1px;
