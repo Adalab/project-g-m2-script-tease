@@ -9,17 +9,11 @@
 
  // div de cabecera
 
- .form__fieldset-wrapper {
-   display:flex;
-   justify-content:space-between;
-   align-items: center;
-   text-transform:uppercase;
- }
-
  .form__fieldset-head-container {
    display:flex;
-   justify-content:center;
+   justify-content:space-between;
    align-items: baseline;
+   text-transform:uppercase;
  }
 
  .form__fieldset-main_title {
