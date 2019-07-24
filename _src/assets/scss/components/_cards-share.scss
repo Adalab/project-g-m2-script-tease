@@ -7,9 +7,9 @@
   text-transform: uppercase;
 }
 
-.container{
-  margin: 0 20px;
+.share__fieldset .container{
   border: 0px 1px;
+  position:relative;
 }
 
 .content__share-container{
@@ -20,20 +20,34 @@
 
 }
 
-.share__title-icon{
-  @include centered ();
-}
-
-.fa-share-alt{
-  color: $dull-orange;
-}
-
 .share__title{
   font-weight: 600;
   font-size: 18px;
-  margin-left: 12px;
   font-weight: $font-weight-bold;
+  padding-left: 28px;
 }
+
+.share__title:before{
+  content:"\f1e0";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 5 pro";
+  font-weight: 600;
+  color: $dull-orange;
+}
+
+.share__title:after {
+  content: "\f077";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 18px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Pro";
+  color: $dark-grey;
+}
+
 .share-button-create{
   @include centered ();
   text-align: center;
@@ -51,10 +65,21 @@
   text-transform: uppercase;
   border-radius: 12px;
   @include centered ();
+  position:relative;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
-
-.fa-id-card{
-  margin-right: 9px;
+.share_button-icon{
+  padding-left:34px;
+}
+.share_button-icon:before{
+  content:"\f2bb";
+  position: absolute;
+  top:50%;
+  left:17px;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-family: "Font Awesome 5 Pro";
+  color: $white;
 }
 
 .line-bottom{

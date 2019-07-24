@@ -16,9 +16,7 @@
   font-size: $font-xs;
   text-transform: lowercase;
   color: $dull-orange;
-}
-.fa-twitter{
-  margin-right: 5px;
+
 }
 .button-twitter{
   background-color: $twittwe-blue;
@@ -30,12 +28,25 @@
   font-family: $OpenSans;
   margin-top: 15px;
   margin-bottom: 30px;
-
+  position:relative;
   @include centered ();
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 
 .text-link-twitter{
   text-transform: lowercase;
+  padding-left:9px;
+}
+.text-link-twitter:before{
+  text-transform: lowercase;
+  content:"\f099";
+  position: absolute;
+  top:50%;
+  left:10px;
+  transform: translateY(-50%);
+  font-family: "Font Awesome 5 Brands";
+  color: $white;
+
 }
 
 .text-link-twitter::first-letter{
