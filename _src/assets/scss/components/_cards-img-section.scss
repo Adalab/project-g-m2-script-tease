@@ -20,8 +20,8 @@
 .reset:before{
   content:"\f2ed";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 6px;
+  left: 12px;
   font-family: "Font Awesome 5 pro";
   font-weight: 600;
   color: $color-card-img-section-p;
@@ -65,7 +65,34 @@
   border:solid 2px $hospital-green;
   border-radius:50%;
   margin-right: 10px;
-  height:32px;
+  height:1px;
+  padding-top:31px;
   width:32px;
   @include centered();
+  position: relative;
+  overflow:hidden;
+}
+.span__text{
+  position:absolute;
+  top:40px;
+}
+.icon__mobile{
+  background-image: url(../images/mobile-alt-solid.svg);
+  @include bg-img;
+  background-size:13px;
+}
+.icon__mail{
+  background-image: url(../images/envelope.svg);
+  @include bg-img;
+  background-size:16px;
+}
+.icon__linkedin{
+  background-image: url(../images/linkedin-in-brands.svg);
+  @include bg-img;
+  background-size:16px;
+}
+.icon__github{
+  background-image: url(../images/github-alt-brands.svg);
+  @include bg-img;
+  background-size:16px;
 }
