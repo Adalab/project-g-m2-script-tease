@@ -21,13 +21,14 @@
   box-sizing: border-box;
 }
 .container-page{
-  min-height: 100vh;
+  height:100vh;
   display: grid;
-  grid-template-rows: (1fr 1fr);
+  grid-template-rows: (1fr auto);
 }
-.container-header-main{
-  grid-row:1fr;
+.header-main-container{
+  grid-row:1/2;
 }
+
 
 
 

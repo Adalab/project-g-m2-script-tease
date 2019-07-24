@@ -3,16 +3,19 @@
   padding-top: 36px;
   background-color: $color-landing-bg;
   position: relative;
+
 }
 .landing__main .container{
   @include centered();
   flex-direction: column;
-  margin: 35px;
+  margin:  0px 35px;
 }
 .landing__main-title {
   color: $color-landing-h2;
-  font-size: $font-md;
+  font-size: 19px;
   text-align: center;
+  font-family: $merrifont;
+  font-weight: $font-weight-bold-merri;
 }
 .landing__main-paragraph {
   width: 265px;
@@ -20,11 +23,12 @@
   font-size: $font-xs;
   text-align: center;
   font-family: $OpenSans;
+  font-weight: $font-weight-normal;
 }
 .landing__main-list {
   @include clear-list();
   margin-top: 18px;
-  padding: 10px 20px 15px;
+  padding: 10px 15px 17px;
   display: flex;
   // height: 44px;
   justify-content: center;
@@ -36,15 +40,18 @@
   flex-direction: column;
   text-align: center;
   align-items: space-around;
-  color: $dull-orange;
-  width: 80px;
-  padding-bottom: 8px;
+  color: $intermediate-grey;
+  width: 60px;
+
   margin-right: 24px;
   // margin-right: 24px;
   font-family: $OpenSans;
+  font-size: $font-xs;
+  font-weight: $font-weight-normal;
 }
 .landing__-logo{
   text-align: center;
+  color: $dull-orange;
 }
 .li-share {
   margin-right: 0px;
@@ -74,6 +81,7 @@
   border-radius: 21px;
   font-size: $font-sm;
   font-family: $OpenSans;
+  font-weight: $font-weight-bold;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
