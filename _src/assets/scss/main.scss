@@ -9,7 +9,7 @@
 @import 'components/design';
 @import 'components/_footer.scss';
 @import 'components/cards-img-section';
-@import 'core/_cards-form-section.scss';
+@import 'components/_cards-form-section.scss';
 @import 'components/cards-header';
 
 
@@ -26,7 +26,11 @@
   grid-row:1fr;
 }
 
-
+fieldset{
+  border:none;
+  padding:0;
+  margin:0;
+}
 
 
 

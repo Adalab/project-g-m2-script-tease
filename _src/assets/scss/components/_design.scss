@@ -1,52 +1,96 @@
-*{
-  margin: 0;
+.design {
   padding: 0;
-  box-sizing: border-box;
-}
-.container{
-  margin: 30px 20px;
-}
-.design{
   color: $intermediate-grey;
   font-family: $OpenSans;
-  text-transform: uppercase;
   background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+  text-transform: uppercase;
+
+  }
+  .design .container{
+    border-bottom: solid 1px $color-card-fill_form-section-line;
+    padding-bottom: 30px;
+  }
+.design-title__container {
+  margin-top: 27px;
 }
-.desing__title{
- font-weight: 600;
- font-size: 18px;
- margin-left: 10px;
+.desing__title {
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  padding: 0 180px 0 31px;
+  display:inline-block;
 }
-.design__subtitle{
-  font-weight: normal;
-  font-size: 14px;
-  display: block;
-  transform: translateY(22px);
+.desing__title:before {
+  content: "\f248";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Font Awesome 5 Pro";
+  color: $dull-orange;
+  font-weight: 400;
+
 }
 
-.content-colors__container{
-  display: flex;
+.desing__title:after {
+  content: "\f077";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 18px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Pro";
+  color: $dark-grey;
+}
+
+.design__subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  margin-left:19px;
+}
+
+.colors__container{
+  display:flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 28px;
 }
-.title-icon{
+.color__group{
+  margin-top: 4px;
+}
+
+// .content-colors__container{
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+// }
+
+// .title-icon{
+// display: flex;
+// }
+
+// .fa-object-ungroup{
+// color: $color-fieldset-icon;
+// font-size: 18px;
+// }
+
+// .button {
+// border: none;
+// background-color: transparent;
+//   &:visited{
+//   border: none;
+//   }
+// }
+
+// .fa-angle-up{
+// color: $color-card-img-section-p;
+// font-size: 18px;
+// font-weight: normal;
+// }
+
+.colors__list {
+  list-style: none;
   display: flex;
-}
-.fa-object-ungroup{
-color: $color-fieldset-icon;
-font-size: 18px;
-}
-.button {
-  border: none;
-  background-color: transparent;
-  &:visited{
-    border: none;
-  }
-}
-.fa-angle-up{
-color: $color-card-img-section-p;
-font-size: 18px;
-font-weight: normal;
+  margin: 0 0 0 10px;
+  padding: 0;
 }
 .list__item {
   width: 30px;
@@ -54,16 +98,13 @@ font-weight: normal;
   padding-top: 24px;
   overflow: hidden;
 }
-.colors__list{
-  list-style: none;
-  display: flex;
-  margin: 0 0 0 10px;
-}
+
 .colors__row {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+
 .op2__container {
   margin: 20px 0;
 }
