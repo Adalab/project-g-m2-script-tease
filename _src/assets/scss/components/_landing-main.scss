@@ -1,5 +1,5 @@
 .landing__main {
-  min-height: 330px;
+  min-height: 270px;
   padding-top: 36px;
   background-color: $color-landing-bg;
   position: relative;
@@ -8,7 +8,6 @@
 .landing__main .container{
   @include centered();
   flex-direction: column;
-  margin:  0px 35px;
 }
 .landing__main-title {
   color: $color-landing-h2;

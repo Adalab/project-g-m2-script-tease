@@ -27,6 +27,8 @@
 }
 .header-main-container{
   grid-row:1/2;
+  display:grid;
+  grid-template-rows:(auto 1fr);
 }
 
 
