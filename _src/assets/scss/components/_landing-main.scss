@@ -5,6 +5,7 @@
   position: relative;
   @media all and (min-width:768px){
     padding-top: 31px;
+    min-height: 460px;
   }
 
 }
@@ -123,7 +124,7 @@
   transform: translate(-50%);
   bottom: 30px;
     @media all and (min-width:768px){
-      bottom: 59px;
-
+      // bottom: 59px;
+      transform: translate(-50%);
 }
 }

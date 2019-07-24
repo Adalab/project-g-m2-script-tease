@@ -30,9 +30,11 @@
   grid-row:1/2;
   display:grid;
   grid-template-rows:(auto 1fr);
+  background-color: $color-landing-bg;
   @media all and (min-width:768px){
     display: flex;
     flex-direction: column;
+    height: 963px;
   }
 
 

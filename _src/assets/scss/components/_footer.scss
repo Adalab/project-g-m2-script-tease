@@ -4,10 +4,11 @@
   grid-row: 2/3;
   border-top: solid 1px $linea;
   @media all and (min-width:768px){
+    padding-top: 10px;
+    padding-bottom: 10px;
     .container{
       margin: 0px 40px;
     }
-
   }
 }
 
@@ -34,7 +35,4 @@
 .landing__footer-logo{
   width: 103px;
   height: 40px;
-  // @media all and (min-width:768px){
-  //   grid-column: 2/3;
-  //   grid-row: 1/2;
 }
