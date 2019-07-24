@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top:10px;
 
 }
 
@@ -30,7 +31,8 @@
 .share__title{
   font-weight: 600;
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 12px;
+  font-weight: $font-weight-bold;
 }
 .share-button-create{
   @include centered ();
@@ -45,7 +47,7 @@
   height: 50px;
   font-size: $font-md;
   font-family: $OpenSans;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semibold;
   text-transform: uppercase;
   border-radius: 12px;
   @include centered ();

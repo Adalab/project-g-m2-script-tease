@@ -22,6 +22,7 @@
 }
 .button-twitter{
   background-color: $twittwe-blue;
+  height: 30px;
   color: $white;
   border-radius: 3px;
   padding: 3px 15px;
@@ -29,6 +30,7 @@
   font-family: $OpenSans;
   margin-top: 15px;
   margin-bottom: 30px;
+
   @include centered ();
 }
 
@@ -39,12 +41,16 @@
 .text-link-twitter::first-letter{
   text-transform: uppercase;
   padding-bottom: 30px;
+  margin-left: 10px;
+  padding:0px;
 }
 
 .content__twitter-container{
   .line-bottom{
   margin-bottom: 0px;
-  border-bottom: solid 2px #d8d8d8
+  border-bottom: solid 1px #d8d8d8;
+  margin-bottom: 30px;
+
 }
 }
 
