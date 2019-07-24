@@ -1,8 +1,8 @@
 .form__fieldset {
-  font-family:'Open Sans', sans-serif;
+  font-family:$OpenSans;
   font-weight: 300;
   font-size:14px;
-  color:#54585a;
+  color:$color-card-fill_form-section-h2;
   border-style:none;
   // border-bottom:solid 1px #d8d8d8;
  }
@@ -15,6 +15,7 @@
    align-items: baseline;
    text-transform:uppercase;
    position:relative;
+   margin-bottom:25px;
  }
 
  .form__fieldset-main_title {
@@ -28,7 +29,7 @@
    height:18px;
    font-family: "Font Awesome 5 Pro";
    font-weight:400;
-   color:#e17334;
+   color:$color-card-fill_form-section-icon_and_button;
    position:absolute;
    left:0;
    top:4px;
@@ -39,7 +40,7 @@
   width: 16px;
   height:18px;
   font-family: "Font Awesome 5 Pro";
-  color: #54585a;
+  color:$color-card-fill_form-section-arrow;
   position:absolute;
   right:0;
   top:4px;
@@ -48,10 +49,10 @@
  // div fieldset
 
  .form__fieldset-content {
-   font-family:'Open Sans', sans-serif;
+   font-family:$OpenSans;
    font-size:14px;
    text-align:left;
-   color:#114e4e;
+   color:$color-card-fill_form-section-label;
    display:flex;
    flex-direction:column;
    padding:0 0 2px;
@@ -61,15 +62,13 @@
    box-sizing: border-box;
    width: 100%;
    height:30px;
-   margin:0 0 18px;
-   border:solid 1px #a2deaf;
-   color:#c5c5c5;
+   margin:0 0 20px;
+   border:solid 1px $color-card-fill_form-section-input;
+   color:$color-card-fill_form-section-input-text;
    opacity:0.6;
  }
 
- .gap2 {
-   margin:0;
- }
+
 
  // div dentro del fieldset
 
@@ -79,10 +78,10 @@
    grid-template-rows: auto auto;
    grid-column-gap:15px;
    grid-row-gap:8px;
-   font-family:'Open Sans', sans-serif;
+   font-family:$OpenSans;
    font-size:14px;
-   color:#114e4e;
-   margin:18px 0;
+   color:$color-card-fill_form-section-label;
+   margin:-2px 0 20px;
  }
 
  .form__fieldset-add_img-text {
@@ -92,24 +91,24 @@
  }
 
  .form__fieldset-add_img-button {
-   font-family:'Open Sans', sans-serif;;
+   font-family:$OpenSans;
    font-size:14px;
-   color:white;
+   color:$color-card-fill_form-section-button-text;
    width:140px;
    height:30px;
-   background-color:#e17334;
+   background-color:$color-card-fill_form-section-icon_and_button;
    border-style:none;
    border-radius:8px;
  }
 
  .form__fieldset-add_img-mini_container {
-   border:solid 1px #a2deaf;
+   border:solid 1px $color-card-fill_form-section-input;
    width:30px;
    height:30px;
  }
 
  .line-bottom {
-   margin: 10px 0 10px;
-  border-bottom:solid 1px #d8d8d8;
+   margin: 30px 0 10px;
+  border-bottom:solid 1px $color-card-fill_form-section-line;
  }
 

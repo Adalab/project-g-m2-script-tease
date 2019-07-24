@@ -13,6 +13,7 @@ $font-sm:16px;
 $font-xs: 12px;
 
 
+
 $line-height-md: 20px;
 
 
@@ -35,7 +36,9 @@ $white: white;
 $grey: #f5f5f5;
 $dark-grey: #6b6b6b;
 $intermediate-grey: #54585a;
+$light-grey:#c5c5c5;
 $twittwe-blue:#00a0f5;
+$ultralight-grey:#d8d8d8;
 
 /*Colors landing section*/
 
@@ -60,3 +63,16 @@ $color-fieldset-icon: $dull-orange;
 $color__img-title: $dark-green-blue;
 
 $color__img-button: $intermediate-grey;
+
+
+//varaibles para fill-form
+$color-card-fill_form-section-icon_and_button:$dull-orange;
+$color-card-fill_form-section-h2:$intermediate-grey;
+$color-card-fill_form-section-arrow:$intermediate-grey;
+$color-card-fill_form-section-button-text:$white;
+$color-card-fill_form-section-label:$dark-green-blue;
+$color-card-fill_form-section-input:$hospital-green;
+$color-card-fill_form-section-input-text:$light-grey;
+$color-card-fill_form-section-line:$ultralight-grey;
+
+
