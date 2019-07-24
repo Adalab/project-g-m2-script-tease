@@ -11,6 +11,7 @@
  margin: 0 35px;
  @media all and (min-width:768px){
   margin: 0 175px;
+
  }
 
 }
@@ -23,9 +24,13 @@
  background-size: cover;
  padding-top: 64px;
  @media all and (min-width:768px){
-  width: 420px;
-  height: 174;
-  // padding: 175px 54px 0px 54px;
+  width: 470px;
+  margin-bottom: 100px;
+  padding-top: 120px;
+  // padding-right: 30px;
+  // padding-left: 30px;
+
+
 
  }
 }

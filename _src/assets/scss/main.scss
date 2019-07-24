@@ -24,14 +24,20 @@
   height:100vh;
   display: grid;
   grid-template-rows: (1fr auto);
+
 }
 .header-main-container{
   grid-row:1/2;
   display:grid;
   grid-template-rows:(auto 1fr);
+  @media all and (min-width:768px){
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
 }
-
 fieldset{
   border:none;
   padding:0;
