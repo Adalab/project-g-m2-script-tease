@@ -11,12 +11,12 @@
   }
 .design-title__container {
   margin-top: 27px;
+  position: relative;
 }
 .desing__title {
   font-weight: 600;
   font-size: 18px;
-  position: relative;
-  padding: 0 180px 0 31px;
+  padding: 0 0 0 31px;
   display:inline-block;
 }
 .desing__title:before {
@@ -27,7 +27,6 @@
   font-family: "Font Awesome 5 Pro";
   color: $dull-orange;
   font-weight: 400;
-
 }
 
 .desing__title:after {
@@ -45,12 +44,18 @@
   font-weight: normal;
   font-size: 14px;
   margin-left:19px;
+  @media all and (min-width:768px){
+    margin-left: 0;
+  }
 }
 
 .colors__container{
   display:flex;
   justify-content: space-between;
   margin-top: 28px;
+  @media all and (min-width:768px){
+    margin-top: 25px;
+  }
 }
 .color__group{
   margin-top: 4px;

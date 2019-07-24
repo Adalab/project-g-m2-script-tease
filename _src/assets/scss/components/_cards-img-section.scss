@@ -1,6 +1,9 @@
 .cards__img-section{
   background: $color-card-img-section-bg;
   @include centered();
+  @media all and (min-width:768px){
+    min-width:329px;
+  }
 }
 .cards__img-section .container{
   padding: 38px 0 40px;
