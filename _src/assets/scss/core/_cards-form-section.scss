@@ -14,25 +14,35 @@
    justify-content:space-between;
    align-items: baseline;
    text-transform:uppercase;
+   position:relative;
  }
 
  .form__fieldset-main_title {
    font-size:18px;
-   padding: 0 0 0 10px;
+   padding: 0 0 0 28px;
  }
 
- .fa-keyboard  {
-   font-size:18px;
+ .form__fieldset-main_title:before {
+   content:"\f11c";
+   width:21px;
+   height:18px;
+   font-family: "Font Awesome 5 Pro";
+   font-weight:400;
    color:#e17334;
+   position:absolute;
+   left:0;
+   top:4px;
  }
 
-.form__fieldset-button {
-  border-style:none;
-}
-
- .fa-chevron-up{
-   font-size:18px;
-   color: #54585a;
+ .form__fieldset-main_title:after {
+  content:"\f077";
+  width: 16px;
+  height:18px;
+  font-family: "Font Awesome 5 Pro";
+  color: #54585a;
+  position:absolute;
+  right:0;
+  top:4px;
  }
 
  // div fieldset
