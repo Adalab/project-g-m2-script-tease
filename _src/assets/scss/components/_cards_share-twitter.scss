@@ -1,0 +1,58 @@
+.share__text-twitter{
+  @include centered ();
+  flex-direction: column;
+}
+
+.share__title-twitter{
+  text-transform: lowercase;
+  color: $intermediate-grey;
+  font-size: $font-md;
+  margin-top: 20px;
+}
+.share__title-twitter::first-letter{
+  text-transform: uppercase;
+}
+.link-twitter{
+  font-size: $font-xs;
+  text-transform: lowercase;
+  color: $dull-orange;
+}
+.fa-twitter{
+  margin-right: 5px;
+}
+.button-twitter{
+  background-color: $twittwe-blue;
+  height: 30px;
+  color: $white;
+  border-radius: 3px;
+  padding: 3px 15px;
+  font-size: 14px;
+  font-family: $OpenSans;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  @include centered ();
+}
+
+.text-link-twitter{
+  text-transform: lowercase;
+}
+
+.text-link-twitter::first-letter{
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  margin-left: 10px;
+  padding:0px;
+}
+
+.content__twitter-container{
+  .line-bottom{
+  margin-bottom: 0px;
+  border-bottom: solid 1px #d8d8d8;
+  margin-bottom: 30px;
+
+}
+}
+
+
+

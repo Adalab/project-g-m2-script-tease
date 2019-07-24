@@ -53,9 +53,5 @@ node_modules/
 ### Public folder
 public
 
-<<<<<<< HEAD
 ### VS CODE folder
-=======
-### vscode folder
->>>>>>> cards-header
-vscode
+  vscode

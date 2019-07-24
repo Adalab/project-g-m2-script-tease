@@ -11,6 +11,9 @@
 @import 'components/cards-img-section';
 @import 'components/_cards-form-section.scss';
 @import 'components/cards-header';
+@import 'components/_cards-share.scss';
+@import 'components/_cards_share-twitter.scss';
+
 
 
 *{
@@ -18,12 +21,14 @@
   box-sizing: border-box;
 }
 .container-page{
-  min-height: 100vh;
+  height:100vh;
   display: grid;
-  grid-template-rows: (1fr 1fr);
+  grid-template-rows: (1fr auto);
 }
-.container-header-main{
-  grid-row:1fr;
+.header-main-container{
+  grid-row:1/2;
+  display:grid;
+  grid-template-rows:(auto 1fr);
 }
 
 fieldset{
@@ -31,6 +36,7 @@ fieldset{
   padding:0;
   margin:0;
 }
+
 
 
 

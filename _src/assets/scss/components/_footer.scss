@@ -1,12 +1,16 @@
 .landing__footer{
   padding: 18px 0 20px;
   text-align: center;
+  grid-row: 2/3;
+  border-top: solid 1px $linea;
 }
 .landing__footer-copy{
   opacity: 50%;
-  font-size: $font-xs;
+  font-size: 14px;
+  font-family: $OpenSans;
   color:$color-copy;
   margin-bottom: 12px;
+
 }
 .landing__footer-logo{
   width: 103px;

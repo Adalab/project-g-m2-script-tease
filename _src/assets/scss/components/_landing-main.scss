@@ -1,8 +1,9 @@
 .landing__main {
-  min-height: 330px;
+  min-height: 270px;
   padding-top: 36px;
   background-color: $color-landing-bg;
   position: relative;
+
 }
 .landing__main .container{
   @include centered();
@@ -10,8 +11,10 @@
 }
 .landing__main-title {
   color: $color-landing-h2;
-  font-size: $font-md;
+  font-size: 19px;
   text-align: center;
+  font-family: $merrifont;
+  font-weight: $font-weight-bold-merri;
 }
 .landing__main-paragraph {
   width: 265px;
@@ -19,41 +22,52 @@
   font-size: $font-xs;
   text-align: center;
   font-family: $OpenSans;
+  font-weight: $font-weight-normal;
 }
 .landing__main-list {
-
   @include clear-list();
   margin-top: 18px;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
+  padding: 10px 15px 17px;
   display: flex;
+  // height: 44px;
   justify-content: center;
+  align-items: center;
   border: $color-landing-list-border solid 1px;
 }
 .landing__main-li {
-
+  @include centered();
+  flex-direction: column;
   text-align: center;
-  color: $dull-orange;
+  align-items: space-around;
+  color: $intermediate-grey;
   width: 60px;
+
   margin-right: 24px;
+  // margin-right: 24px;
   font-family: $OpenSans;
+  font-size: $font-xs;
+  font-weight: $font-weight-normal;
 }
 .landing__-logo{
   text-align: center;
+  color: $dull-orange;
 }
 .li-share {
   margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .landing__design-logo {
-  width: 32px;
+  // width: 32px;
   height: 26px;
 }
 .landing__fill-logo {
-  width: 32px;
+  // width: 32px;
   height: 26px;
 }
 .landing__share-logo {
-  width: 25px;
+  // width: 25px;
   height: 26px;
 }
 .landing__main-button {
@@ -66,6 +80,7 @@
   border-radius: 21px;
   font-size: $font-sm;
   font-family: $OpenSans;
+  font-weight: $font-weight-bold;
   position: absolute;
   left: 50%;
   transform: translate(-50%);

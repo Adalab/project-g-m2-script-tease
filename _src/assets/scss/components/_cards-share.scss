@@ -1,0 +1,66 @@
+.fieldset{
+  border: none;
+}
+.share__fieldset{
+  color: $intermediate-grey;
+  font-family: $OpenSans;
+  text-transform: uppercase;
+}
+
+.container{
+  margin: 0 20px;
+  border: 0px 1px;
+}
+
+.content__share-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:10px;
+
+}
+
+.share__title-icon{
+  @include centered ();
+}
+
+.fa-share-alt{
+  color: $dull-orange;
+}
+
+.share__title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 12px;
+  font-weight: $font-weight-bold;
+}
+.share-button-create{
+  @include centered ();
+  text-align: center;
+  margin: 30px 0;
+
+}
+.button-create{
+  background-color: $dull-orange;
+  color: $white;
+  width: 199px;
+  height: 50px;
+  font-size: $font-md;
+  font-family: $OpenSans;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  border-radius: 12px;
+  @include centered ();
+}
+
+.fa-id-card{
+  margin-right: 9px;
+}
+
+.line-bottom{
+  margin-bottom: 0px;
+}
+
+
+
+
