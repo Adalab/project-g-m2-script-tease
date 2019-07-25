@@ -20,18 +20,25 @@ const textGithub = document.querySelector('.icon__github');
 
 function write(event){
   let inputValue = event.currentTarget.value;
-
   if(event.currentTarget.classList.contains('name')){
-    textName.innerHTML = inputValue;
+    if(inputValue !== ""){
+      textName.innerHTML = inputValue;
+    }else if(!inputValue){
+      textName.innerHTML = "Nombre Apellido";
+    }
   }
   else if(event.currentTarget.classList.contains('puesto')){
-    textJob.innerHTML = inputValue;
+    if(inputValue !== ""){
+      textJob.innerHTML = inputValue;
+    }else if(!inputValue){
+      textJob.innerHTML = "Front-end developer";
+    }
   }
   else if(event.currentTarget.classList.contains('phone')){
     textPhone.href = 'phoneto:' + inputValue;
     if(textPhone.classList.contains('hidden_v')){
       textPhone.classList.remove('hidden_v');
-    }else if(textPhone.href === 'phoneto:'){
+    }else if(!inputValue){
       textPhone.classList.add('hidden_v');
     }
   }
@@ -39,7 +46,7 @@ function write(event){
     textMail.href = 'mailto:' + inputValue;
     if(textMail.classList.contains('hidden_v')){
       textMail.classList.remove('hidden_v');
-    }else if(textMail.href === 'mailto:'){
+    }else if(!inputValue){
       textMail.classList.add('hidden_v');
     }
   }
@@ -47,7 +54,7 @@ function write(event){
     textLinkedin.href = inputValue;
     if(textLinkedin.classList.contains('hidden_v')){
       textLinkedin.classList.remove('hidden_v');
-    }else if(inputValue === ""){
+    }else if(!inputValue){
       textLinkedin.classList.add('hidden_v');
     }
   }
@@ -55,11 +62,10 @@ function write(event){
     textGithub.href = inputValue;
     if(textGithub.classList.contains('hidden_v')){
       textGithub.classList.remove('hidden_v');
-    }else if(inputValue === ""){
+    }else if(!inputValue){
       textGithub.classList.add('hidden_v');
     }
   }
-  console.log(event.currentTarget);
 }
 
 inputName.addEventListener('keyup', write);
@@ -69,42 +75,56 @@ inputPhone.addEventListener('keyup', write);
 inputLinkedin.addEventListener('keyup', write);
 inputGithub.addEventListener('keyup', write);
 
-
 /* Cambias paletas */
 
 const boxBorder = document.querySelector('.img__text-box');
-const boxCircle = document.querySelector('.icons__item');
+const boxCircle1 = document.querySelector('.icon__mobile');
+const boxCircle2 = document.querySelector('.icon__mail');
+const boxCircle3 = document.querySelector('.icon__linkedin ');
+const boxCircle4 = document.querySelector('.icon__github');
 
 const blue1 = document.querySelector('.blue1');
 const blue2 = document.querySelector('.blue2');
 const blue3 = document.querySelector('.blue3');
 
+const red1 = document.querySelector('.red1');
+const red2 = document.querySelector('.red2');
+const red3 = document.querySelector('.red3');
+
+const green1 = document.querySelector('.green1');
+const green2 = document.querySelector('.green2');
+const green3 = document.querySelector('.green3');
+
 const palette1 = document.querySelector('.input1');
 const palette2 = document.querySelector('.input2');
 const palette3 = document.querySelector('.input3');
 
-
-
-
 function changeColor (event) {
-  console.log('Hola');
-if (event.currentTarget.classList.contains('input1')) {
-  textName.style.color = blue1.innerHTML;
-  boxCircle.style.border = `solid 2px ${blue3.innerHTML}`;
-  console.log('fbsjafbjsdf');
-  boxBorder.style.borderLeft = `solid 5px ${blue2.innerHTML}`;
-  console.log(boxCircle.style.backgroundImage.url);
+  if (event.currentTarget.classList.contains('input1')) {
+    textName.style.color = blue1.innerHTML;
+    boxCircle1.style.border = `solid 2px ${blue3.innerHTML}`;
+    boxCircle2.style.border = `solid 2px ${blue3.innerHTML}`;
+    boxCircle3.style.border = `solid 2px ${blue3.innerHTML}`;
+    boxCircle4.style.border = `solid 2px ${blue3.innerHTML}`;
+    boxBorder.style.borderLeft = `solid 5px ${blue2.innerHTML}`;
+  }
+  else if (event.currentTarget.classList.contains('input2')) {
+    textName.style.color = red1.innerHTML;
+    boxCircle1.style.border = `solid 2px ${red3.innerHTML}`;
+    boxCircle2.style.border = `solid 2px ${red3.innerHTML}`;
+    boxCircle3.style.border = `solid 2px ${red3.innerHTML}`;
+    boxCircle4.style.border = `solid 2px ${red3.innerHTML}`;
+    boxBorder.style.borderLeft = `solid 5px ${red2.innerHTML}`;
+  }
+  else if (event.currentTarget.classList.contains('input3')) {
+    textName.style.color = green1.innerHTML;
+    boxCircle1.style.border = `solid 2px ${green3.innerHTML}`;
+    boxCircle2.style.border = `solid 2px ${green3.innerHTML}`;
+    boxCircle3.style.border = `solid 2px ${green3.innerHTML}`;
+    boxCircle4.style.border = `solid 2px ${green3.innerHTML}`;
+    boxBorder.style.borderLeft = `solid 5px ${green2.innerHTML}`;
+  }
 }
-
-
-}
-
-
-
-
-
-
-
 
 palette1.addEventListener('click', changeColor);
 palette2.addEventListener('click', changeColor);
