@@ -2,10 +2,8 @@
   @include bg-img();
   padding-top: 95px;
   background-color: $color-landing-bg;
-  @media all and (min-width:768px){
-    padding-top: 350px;
-  }
 }
+
 .landing__header .container{
  @include centered();
  margin: 0 35px;

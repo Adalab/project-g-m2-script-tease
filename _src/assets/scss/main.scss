@@ -21,11 +21,11 @@
   box-sizing: border-box;
 }
 .container-page{
-  height:100vh;
+  min-height:100vh;
   display: grid;
   grid-template-rows: (1fr auto);
-
 }
+
 .header-main-container{
   grid-row:1/2;
   display:grid;
@@ -34,12 +34,10 @@
   @media all and (min-width:768px){
     display: flex;
     flex-direction: column;
-    height: 963px;
   }
-
-
-
 }
+
+
 fieldset{
   border:none;
   padding:0;
