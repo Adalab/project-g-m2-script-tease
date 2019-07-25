@@ -106,6 +106,10 @@ function changeColor (event) {
     boxCircle2.style.border = `solid 2px ${blue3.innerHTML}`;
     boxCircle3.style.border = `solid 2px ${blue3.innerHTML}`;
     boxCircle4.style.border = `solid 2px ${blue3.innerHTML}`;
+    boxCircle1.style.backgroundImage = `url(../images/mobile-alt-solid.svg)`;
+    boxCircle2.style.backgroundImage = `url(../images/envelope.svg)`;
+    boxCircle3.style.backgroundImage = `url(../images/linkedin-in-brands.svg)`;
+    boxCircle4.style.backgroundImage = `url(../images/github-alt-brands.svg)`;
     boxBorder.style.borderLeft = `solid 5px ${blue2.innerHTML}`;
   }
   else if (event.currentTarget.classList.contains('input2')) {
@@ -114,6 +118,10 @@ function changeColor (event) {
     boxCircle2.style.border = `solid 2px ${red3.innerHTML}`;
     boxCircle3.style.border = `solid 2px ${red3.innerHTML}`;
     boxCircle4.style.border = `solid 2px ${red3.innerHTML}`;
+    boxCircle1.style.backgroundImage = `url(../images/mobile-alt-solid_red.svg)`;
+    boxCircle2.style.backgroundImage = `url(../images/envelope_red.svg)`;
+    boxCircle3.style.backgroundImage = `url(../images/linkedin-in-brands_red.svg)`;
+    boxCircle4.style.backgroundImage = `url(../images/github-alt-brands_red.svg)`;
     boxBorder.style.borderLeft = `solid 5px ${red2.innerHTML}`;
   }
   else if (event.currentTarget.classList.contains('input3')) {
@@ -122,6 +130,10 @@ function changeColor (event) {
     boxCircle2.style.border = `solid 2px ${green3.innerHTML}`;
     boxCircle3.style.border = `solid 2px ${green3.innerHTML}`;
     boxCircle4.style.border = `solid 2px ${green3.innerHTML}`;
+    boxCircle1.style.backgroundImage = `url(../images/mobile-alt-solid_green.svg)`;
+    boxCircle2.style.backgroundImage = `url(../images/envelope_green.svg)`;
+    boxCircle3.style.backgroundImage = `url(../images/linkedin-in-brands_green.svg)`;
+    boxCircle4.style.backgroundImage = `url(../images/github-alt-brands_green.svg)`;
     boxBorder.style.borderLeft = `solid 5px ${green2.innerHTML}`;
   }
 }
