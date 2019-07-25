@@ -68,3 +68,44 @@ inputMail.addEventListener('keyup', write);
 inputPhone.addEventListener('keyup', write);
 inputLinkedin.addEventListener('keyup', write);
 inputGithub.addEventListener('keyup', write);
+
+
+/* Cambias paletas */
+
+const boxBorder = document.querySelector('.img__text-box');
+const boxCircle = document.querySelector('.icons__item');
+
+const blue1 = document.querySelector('.blue1');
+const blue2 = document.querySelector('.blue2');
+const blue3 = document.querySelector('.blue3');
+
+const palette1 = document.querySelector('.input1');
+const palette2 = document.querySelector('.input2');
+const palette3 = document.querySelector('.input3');
+
+
+
+
+function changeColor (event) {
+  console.log('Hola');
+if (event.currentTarget.classList.contains('input1')) {
+  textName.style.color = blue1.innerHTML;
+  boxCircle.style.border = `solid 2px ${blue3.innerHTML}`;
+  console.log('fbsjafbjsdf');
+  boxBorder.style.borderLeft = `solid 5px ${blue2.innerHTML}`;
+  console.log(boxCircle.style.backgroundImage.url);
+}
+
+
+}
+
+
+
+
+
+
+
+
+palette1.addEventListener('click', changeColor);
+palette2.addEventListener('click', changeColor);
+palette3.addEventListener('click', changeColor);
