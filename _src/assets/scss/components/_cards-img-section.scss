@@ -8,6 +8,10 @@
 .cards__img-section .container{
   padding: 38px 0 40px;
 }
+.cards__wrapper{
+  @media all and (min-width:768px)
+  {position: relative;};
+}
 // La caja que contiene, texto, imagen  botón e iconos.
 .cards__img-wrapper{
   width:240px;
@@ -19,6 +23,11 @@
 .reset{
   position: relative;
   color: $color-card-img-section-p;
+  @media all and (min-width:768px)
+  {position: absolute;
+    top:-50px;
+    left:0;
+  };
 }
 .reset:before{
   content:"\f2ed";
