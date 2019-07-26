@@ -1,6 +1,6 @@
 'use strict';
 
-/* Variables que almacenan los input*/
+/* Variables que almacenan los input, se podria hacer con un SelectorAll*/
 
 const inputName = document.querySelector('.name');
 const inputJob = document.querySelector('.puesto');
@@ -19,10 +19,14 @@ const textLinkedin = document.querySelector('.icon__linkedin');
 const textGithub = document.querySelector('.icon__github');
 
 function write(event){
+
   let inputValue = event.currentTarget.value;
+
   if(event.currentTarget.classList.contains('name')){
+
     if(inputValue !== ""){
       textName.innerHTML = inputValue;
+    /* Para que vuelva a poner algo si el campo se queda vacio */
     }else if(!inputValue){
       textName.innerHTML = "Nombre Apellido";
     }
@@ -77,124 +81,31 @@ inputGithub.addEventListener('keyup', write);
 
 /* Cambias paletas */
 
-const boxBorder = document.querySelector('.img__text-box');
-const boxCircle1 = document.querySelector('.icon__mobile');
-const boxCircle2 = document.querySelector('.icon__mail');
-const boxCircle3 = document.querySelector('.icon__linkedin ');
-const boxCircle4 = document.querySelector('.icon__github');
-
-const blue1 = document.querySelector('.blue1');
-const blue2 = document.querySelector('.blue2');
-const blue3 = document.querySelector('.blue3');
-
-const red1 = document.querySelector('.red1');
-const red2 = document.querySelector('.red2');
-const red3 = document.querySelector('.red3');
-
-const green1 = document.querySelector('.green1');
-const green2 = document.querySelector('.green2');
-const green3 = document.querySelector('.green3');
-
 const palette1 = document.querySelector('.input1');
 const palette2 = document.querySelector('.input2');
 const palette3 = document.querySelector('.input3');
 
+const box = document.querySelector('.cards__img-wrapper');
+
 function changeColor (event) {
-  if (event.currentTarget.classList.contains('input1')) {
-    textName.style.color = blue1.innerHTML;
-    boxCircle1.classList.add('icon__mobile-blue');
-    boxCircle1.classList.remove('icon__mobile-red');
-    boxCircle1.classList.remove('icon__mobile-green');
-    boxCircle2.classList.add('icon__mail-blue');
-    boxCircle2.classList.remove('icon__mail-red');
-    boxCircle2.classList.remove('icon__mail-green');
-    boxCircle3.classList.add('icon__linkedin-blue');
-    boxCircle3.classList.remove('icon__linkedin-red');
-    boxCircle3.classList.remove('icon__linkedin-green');
-    boxCircle4.classList.add('icon__github-blue');
-    boxCircle4.classList.remove('icon__github-red');
-    boxCircle4.classList.remove('icon__github-green');
-    boxBorder.classList.add('img__text-box-blue');
-    boxBorder.classList.remove('img__text-box-red');
-    boxBorder.classList.remove('iimg__text-box-green');
 
-  }
-  else if (event.currentTarget.classList.contains('input2')) {
-    textName.style.color = red1.innerHTML;
-    boxCircle1.classList.add('icon__mobile-red');
-    boxCircle1.classList.remove('icon__mobile-blue');
-    boxCircle1.classList.remove('icon__mobile-green');
-    boxCircle2.classList.add('icon__mail-red');
-    boxCircle2.classList.remove('icon__mail-blue');
-    boxCircle2.classList.remove('icon__mail-green');
-    boxCircle3.classList.add('icon__linkedin-red');
-    boxCircle3.classList.remove('icon__linkedin-blue');
-    boxCircle3.classList.remove('icon__linkedin-green');
-    boxCircle4.classList.add('icon__github-red');
-    boxCircle4.classList.remove('icon__github-blue');
-    boxCircle4.classList.remove('icon__github-green');
-    boxBorder.classList.add('img__text-box-red');
-    boxBorder.classList.remove('img__text-box-blue');
-    boxBorder.classList.remove('img__text-box-green');
+  box.classList.remove('cards__img-wrapper-op1');
+  box.classList.remove('cards__img-wrapper-op2');
+  box.classList.remove('cards__img-wrapper-op3');
 
+  if (event.currentTarget.value === '1') {
+
+    box.classList.add('cards__img-wrapper-op1');
   }
-  else if (event.currentTarget.classList.contains('input3')) {
-    textName.style.color = green1.innerHTML;
-    boxCircle1.classList.add('icon__mobile-green');
-    boxCircle1.classList.remove('icon__mobile-blue');
-    boxCircle1.classList.remove('icon__mobile-red');
-    boxCircle2.classList.add('icon__mail-green');
-    boxCircle2.classList.remove('icon__mail-blue');
-    boxCircle2.classList.remove('icon__mail-red');
-    boxCircle3.classList.add('icon__linkedin-green');
-    boxCircle3.classList.remove('icon__linkedin-blue');
-    boxCircle3.classList.remove('icon__linkedin-red');
-    boxCircle4.classList.add('icon__github-green');
-    boxCircle4.classList.remove('icon__github-blue');
-    boxCircle4.classList.remove('icon__github-red');
-    boxBorder.classList.add('img__text-box-green');
-    boxBorder.classList.remove('img__text-box-blue');
-    boxBorder.classList.remove('img__text-box-red');
+  else if (event.currentTarget.value === '2') {
+
+    box.classList.add('cards__img-wrapper-op2');
+  }
+  else {
+
+    box.classList.add('cards__img-wrapper-op3');
   }
 }
-// function changeColor (event) {
-//   if (event.currentTarget.classList.contains('input1')) {
-//     textName.style.color = blue1.innerHTML;
-//     boxCircle1.style.border = `solid 2px ${blue3.innerHTML}`;
-//     boxCircle2.style.border = `solid 2px ${blue3.innerHTML}`;
-//     boxCircle3.style.border = `solid 2px ${blue3.innerHTML}`;
-//     boxCircle4.style.border = `solid 2px ${blue3.innerHTML}`;
-//     boxCircle1.style.backgroundImage = `url(../images/mobile-alt-solid.svg)`;
-//     boxCircle2.style.backgroundImage = `url(../images/envelope.svg)`;
-//     boxCircle3.style.backgroundImage = `url(../images/linkedin-in-brands.svg)`;
-//     boxCircle4.style.backgroundImage = `url(../images/github-alt-brands.svg)`;
-//     boxBorder.style.borderLeft = `solid 5px ${blue2.innerHTML}`;
-//   }
-//   else if (event.currentTarget.classList.contains('input2')) {
-//     textName.style.color = red1.innerHTML;
-//     boxCircle1.style.border = `solid 2px ${red3.innerHTML}`;
-//     boxCircle2.style.border = `solid 2px ${red3.innerHTML}`;
-//     boxCircle3.style.border = `solid 2px ${red3.innerHTML}`;
-//     boxCircle4.style.border = `solid 2px ${red3.innerHTML}`;
-//     boxCircle1.style.backgroundImage = `url(../images/mobile-alt-solid_red.svg)`;
-//     boxCircle2.style.backgroundImage = `url(../images/envelope_red.svg)`;
-//     boxCircle3.style.backgroundImage = `url(../images/linkedin-in-brands_red.svg)`;
-//     boxCircle4.style.backgroundImage = `url(../images/github-alt-brands_red.svg)`;
-//     boxBorder.style.borderLeft = `solid 5px ${red2.innerHTML}`;
-//   }
-//   else if (event.currentTarget.classList.contains('input3')) {
-//     textName.style.color = green1.innerHTML;
-//     boxCircle1.style.border = `solid 2px ${green3.innerHTML}`;
-//     boxCircle2.style.border = `solid 2px ${green3.innerHTML}`;
-//     boxCircle3.style.border = `solid 2px ${green3.innerHTML}`;
-//     boxCircle4.style.border = `solid 2px ${green3.innerHTML}`;
-//     boxCircle1.style.backgroundImage = `url(../images/mobile-alt-solid_green.svg)`;
-//     boxCircle2.style.backgroundImage = `url(../images/envelope_green.svg)`;
-//     boxCircle3.style.backgroundImage = `url(../images/linkedin-in-brands_green.svg)`;
-//     boxCircle4.style.backgroundImage = `url(../images/github-alt-brands_green.svg)`;
-//     boxBorder.style.borderLeft = `solid 5px ${green2.innerHTML}`;
-//   }
-// }
 
 palette1.addEventListener('click', changeColor);
 palette2.addEventListener('click', changeColor);
