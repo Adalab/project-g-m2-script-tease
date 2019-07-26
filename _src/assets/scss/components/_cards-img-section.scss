@@ -8,17 +8,124 @@
 .cards__img-section .container{
   padding: 38px 0 40px;
 }
-// La caja que contiene, texto, imagen  botón e iconos.
+.cards__wrapper{
+  @media all and (min-width:768px)
+  {position: relative;};
+}
+
+/* Esta es la caja sobre la que tenemos que aplicar los cambios de paleta */
+
 .cards__img-wrapper{
   width:240px;
   background-color: white;
   padding-top: 21px;
   box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0  rgba(0, 0, 0, 0.35);
   border-radius: 2px;
+    .img__text-box{
+      padding: 0 20px 0 9px;
+      margin-bottom:10px;
+    }
+    .icon__mobile{
+      @include bg-img;
+      background-size:13px;
+    }
+    .icon__mail{
+      @include bg-img;
+      background-size:16px;
+    }
+    .icon__linkedin{
+      @include bg-img;
+      background-size:16px;
+    }
+    .icon__github{
+      @include bg-img;
+      background-size:16px;
+    }
 }
+
+.cards__img-wrapper-op1{
+    .img__text-box{
+      border-left: solid 5px $dirty-blue;
+      .img__title{
+        color: #114e4e;
+      }
+    }
+    .icon__mobile{
+      background-image: url(../images/mobile-alt-solid.svg);
+      border:solid 2px $hospital-green;
+    }
+    .icon__mail{
+      background-image: url(../images/envelope.svg);
+      border:solid 2px $hospital-green;
+    }
+    .icon__linkedin{
+      background-image: url(../images/linkedin-in-brands.svg);
+      border:solid 2px $hospital-green;
+    }
+    .icon__github{
+      background-image: url(../images/github-alt-brands.svg);
+      border:solid 2px $hospital-green;  border:solid 2px $hospital-green;
+    }
+}
+
+.cards__img-wrapper-op2{
+  .img__text-box{
+    border-left: solid 5px #bd1010;
+    .img__title{
+      color: #420101;
+    }
+  }
+  .icon__mobile{
+    background-image: url(../images/mobile-alt-solid_red.svg);
+    border:solid 2px #e95626;
+  }
+  .icon__mail{
+    background-image: url(../images/envelope_red.svg);
+    border:solid 2px #e95626;
+  }
+  .icon__linkedin{
+    background-image: url(../images/linkedin-in-brands_red.svg);
+    border:solid 2px #e95626;
+  }
+  .icon__github{
+    background-image: url(../images/github-alt-brands_red.svg);
+    border:solid 2px #e95626;
+  }
+}
+
+.cards__img-wrapper-op3{
+  .img__text-box{
+    border-left: solid 5px #eab052;
+    .img__title{
+      color:#3e5b65;
+    }
+  }
+  .icon__mobile{
+    background-image: url(../images/mobile-alt-solid_green.svg);
+    border:solid 2px #a0c0cf;
+  }
+  .icon__mail{
+    background-image: url(../images/envelope_green.svg);
+    border:solid 2px #a0c0cf;
+  }
+  .icon__linkedin{
+    background-image: url(../images/linkedin-in-brands_green.svg);
+    border:solid 2px #a0c0cf;
+  }
+  .icon__github{
+    background-image: url(../images/github-alt-brands_green.svg);
+    border:solid 2px #a0c0cf;
+  }
+}
+
 .reset{
   position: relative;
   color: $color-card-img-section-p;
+  @media all and (min-width:768px)
+  {position: absolute;
+    top:-50px;
+    left:0;
+  };
 }
 .reset:before{
   content:"\f2ed";
@@ -28,13 +135,6 @@
   font-family: "Font Awesome 5 pro";
   font-weight: 600;
   color: $color-card-img-section-p;
-
-}
-// La caja que contiene el nombre y la profesión.
-.img__text-box{
-  border-left: solid 5px $dirty-blue;
-  padding: 0 20px 0 9px;
-  margin-bottom:10px;
 }
 .img__title{
   margin-bottom:4px;
@@ -65,7 +165,6 @@
   color:inherit;
 }
 .icons__item{
-  border:solid 2px $hospital-green;
   border-radius:50%;
   margin-right: 10px;
   height:1px;
@@ -78,24 +177,4 @@
 .span__text{
   position:absolute;
   top:40px;
-}
-.icon__mobile{
-  background-image: url(../images/mobile-alt-solid.svg);
-  @include bg-img;
-  background-size:13px;
-}
-.icon__mail{
-  background-image: url(../images/envelope.svg);
-  @include bg-img;
-  background-size:16px;
-}
-.icon__linkedin{
-  background-image: url(../images/linkedin-in-brands.svg);
-  @include bg-img;
-  background-size:16px;
-}
-.icon__github{
-  background-image: url(../images/github-alt-brands.svg);
-  @include bg-img;
-  background-size:16px;
 }

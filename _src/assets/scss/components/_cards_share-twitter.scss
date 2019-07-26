@@ -61,9 +61,12 @@
   border-bottom: solid 1px #d8d8d8;
   margin-bottom: 30px;
   margin-top: 0px;
-
 }
 }
 
-
+@media all and (min-width:768px){
+  .share__fieldset .container{
+    margin-right: 30px;
+  }
+}
 
