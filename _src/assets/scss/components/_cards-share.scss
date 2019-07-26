@@ -6,7 +6,6 @@
   font-family: $OpenSans;
   text-transform: uppercase;
 }
-
 .share__fieldset .container{
   border: 0px 1px;
   position:relative;
@@ -14,22 +13,18 @@
       margin-right: 30px;
     }
   }
-
 .content__share-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top:10px;
-
 }
-
 .share__title{
   font-weight: 600;
   font-size: 18px;
   font-weight: $font-weight-bold;
   padding-left: 28px;
 }
-
 .share__title:before{
   content:"\f1e0";
   position: absolute;
@@ -39,7 +34,6 @@
   font-weight: 600;
   color: $dull-orange;
 }
-
 .share__title:after {
   content: "\f077";
   position: absolute;
@@ -50,12 +44,10 @@
   font-family: "Font Awesome 5 Pro";
   color: $dark-grey;
 }
-
 .share-button-create{
   @include centered ();
   text-align: center;
   margin: 30px 0;
-
 }
 .button-create{
   background-color: $dull-orange;
@@ -84,10 +76,19 @@
   font-family: "Font Awesome 5 Pro";
   color: $white;
 }
-
 .line-bottom{
   margin-bottom: 0px;
 }
+.open .share__title:after{
+  transform: scale(-1);
+}
+/*
+.rollContainer-js{
+  display: none;
+}
+.open .rollContainer-js{
+  display: block;
+}*/
 
 
 
