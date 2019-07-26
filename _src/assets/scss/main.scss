@@ -25,12 +25,18 @@
   display: grid;
   grid-template-rows: (1fr auto);
 }
-.header-main-container{
-  grid-row:1/2;
-  display:grid;
-  grid-template-rows:(auto 1fr);
 
+.header-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-landing-bg;
+  position: relative;
+ /* grid-row:1/2;
+  display:grid;
+  grid-template-rows:(auto 1fr);*/
 }
+
 
 fieldset{
   border:none;
