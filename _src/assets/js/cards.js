@@ -3,7 +3,7 @@
 /* Variables que almacenan los input, se podria hacer con un SelectorAll*/
 
 const inputName = document.querySelector('.name');
-const inputJob = document.querySelector('.puesto');
+const inputJob = document.querySelector('.job');
 const inputMail = document.querySelector('.mail');
 const inputPhone = document.querySelector('.phone');
 const inputLinkedin = document.querySelector('.linkedin_input');
