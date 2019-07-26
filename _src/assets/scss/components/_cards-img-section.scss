@@ -12,9 +12,9 @@
   @media all and (min-width:768px)
   {position: relative;};
 }
-// La caja que contiene, texto, imagen  botón e iconos.
 
 /* Esta es la caja sobre la que tenemos que aplicar los cambios de paleta */
+
 .cards__img-wrapper{
   width:240px;
   background-color: white;
@@ -42,9 +42,13 @@
       background-size:16px;
     }
 }
+
 .cards__img-wrapper-op1{
     .img__text-box{
       border-left: solid 5px $dirty-blue;
+      .img__title{
+        color: #114e4e;
+      }
     }
     .icon__mobile{
       background-image: url(../images/mobile-alt-solid.svg);
@@ -63,10 +67,13 @@
       border:solid 2px $hospital-green;  border:solid 2px $hospital-green;
     }
 }
-.cards__img-wrapper-op2{
 
+.cards__img-wrapper-op2{
   .img__text-box{
     border-left: solid 5px #bd1010;
+    .img__title{
+      color: #420101;
+    }
   }
   .icon__mobile{
     background-image: url(../images/mobile-alt-solid_red.svg);
@@ -87,23 +94,25 @@
 }
 
 .cards__img-wrapper-op3{
-
-  &.img__text-box{
+  .img__text-box{
     border-left: solid 5px #eab052;
+    .img__title{
+      color:#3e5b65;
+    }
   }
-  &.icon__mobile{
+  .icon__mobile{
     background-image: url(../images/mobile-alt-solid_green.svg);
     border:solid 2px #a0c0cf;
   }
-  &.icon__mail{
+  .icon__mail{
     background-image: url(../images/envelope_green.svg);
     border:solid 2px #a0c0cf;
   }
-  &.icon__linkedin{
+  .icon__linkedin{
     background-image: url(../images/linkedin-in-brands_green.svg);
     border:solid 2px #a0c0cf;
   }
-  &.icon__github{
+  .icon__github{
     background-image: url(../images/github-alt-brands_green.svg);
     border:solid 2px #a0c0cf;
   }
@@ -126,7 +135,6 @@
   font-family: "Font Awesome 5 pro";
   font-weight: 600;
   color: $color-card-img-section-p;
-
 }
 .img__title{
   margin-bottom:4px;

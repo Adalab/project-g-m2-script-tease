@@ -27,47 +27,51 @@ function write(event){
     if(inputValue !== ""){
       textName.innerHTML = inputValue;
     /* Para que vuelva a poner algo si el campo se queda vacio */
-    }else if(!inputValue){
+    }else{
       textName.innerHTML = "Nombre Apellido";
     }
   }
   else if(event.currentTarget.classList.contains('puesto')){
     if(inputValue !== ""){
       textJob.innerHTML = inputValue;
-    }else if(!inputValue){
+    }else{
       textJob.innerHTML = "Front-end developer";
     }
   }
   else if(event.currentTarget.classList.contains('phone')){
-    textPhone.href = 'phoneto:' + inputValue;
-    if(textPhone.classList.contains('hidden_v')){
-      textPhone.classList.remove('hidden_v');
-    }else if(!inputValue){
+    textPhone.href = 'tel:' + inputValue;
+    if(inputValue === ""){
       textPhone.classList.add('hidden_v');
+    }
+    else{
+      textPhone.classList.remove('hidden_v');
     }
   }
   else if(event.currentTarget.classList.contains('mail')){
     textMail.href = 'mailto:' + inputValue;
-    if(textMail.classList.contains('hidden_v')){
-      textMail.classList.remove('hidden_v');
-    }else if(!inputValue){
+    if(inputValue === ""){
       textMail.classList.add('hidden_v');
+    }
+    else{
+      textMail.classList.remove('hidden_v');
     }
   }
   else if(event.currentTarget.classList.contains('linkedin_input')){
     textLinkedin.href = inputValue;
-    if(textLinkedin.classList.contains('hidden_v')){
-      textLinkedin.classList.remove('hidden_v');
-    }else if(!inputValue){
+    if(inputValue === ""){
       textLinkedin.classList.add('hidden_v');
+    }
+    else{
+      textLinkedin.classList.remove('hidden_v');
     }
   }
   else if(event.currentTarget.classList.contains('github_input')){
     textGithub.href = inputValue;
-    if(textGithub.classList.contains('hidden_v')){
-      textGithub.classList.remove('hidden_v');
-    }else if(!inputValue){
+    if(inputValue === ""){
       textGithub.classList.add('hidden_v');
+    }
+    else{
+      textGithub.classList.remove('hidden_v');
     }
   }
 }
@@ -94,15 +98,12 @@ function changeColor (event) {
   box.classList.remove('cards__img-wrapper-op3');
 
   if (event.currentTarget.value === '1') {
-
     box.classList.add('cards__img-wrapper-op1');
   }
   else if (event.currentTarget.value === '2') {
-
     box.classList.add('cards__img-wrapper-op2');
   }
   else {
-
     box.classList.add('cards__img-wrapper-op3');
   }
 }
