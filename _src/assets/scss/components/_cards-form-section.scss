@@ -3,7 +3,7 @@
   @media all and (min-width: 768px){
     display:flex;
     flex-direction:row-reverse;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 20px;
   }
 }
 .form__wrapper{
@@ -17,9 +17,12 @@
   font-size:14px;
   color:$color-card-fill_form-section-h2;
   border-style:none;
-  // border-bottom:solid 1px #d8d8d8;
  }
-
+  @media all and (min-width: 768px){
+    .form__fieldset .container{
+    margin-right: 31px;
+  }
+}
  // div de cabecera
 
  .form__fieldset-head-container {

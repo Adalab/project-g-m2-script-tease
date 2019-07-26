@@ -10,7 +10,10 @@
 .share__fieldset .container{
   border: 0px 1px;
   position:relative;
-}
+  @media all and (min-width:768px){
+      margin-right: 30px;
+    }
+  }
 
 .content__share-container{
   display: flex;
