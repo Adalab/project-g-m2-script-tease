@@ -45,6 +45,15 @@
   padding: 0 20px 0 9px;
   margin-bottom:10px;
 }
+.img__text-box-blue{
+  border-left: solid 5px $dirty-blue;
+}
+.img__text-box-red{
+  border-left: solid 5px #bd1010;
+}
+.img__text-box-green{
+  border-left: solid 5px #eab052;
+}
 .img__title{
   margin-bottom:4px;
 }
@@ -74,7 +83,6 @@
   color:inherit;
 }
 .icons__item{
-  border:solid 2px $hospital-green;
   border-radius:50%;
   margin-right: 10px;
   height:1px;
@@ -89,22 +97,78 @@
   top:40px;
 }
 .icon__mobile{
-  background-image: url(../images/mobile-alt-solid.svg);
   @include bg-img;
   background-size:13px;
 }
+.icon__mobile-blue{
+  background-image: url(../images/mobile-alt-solid.svg);
+  border:solid 2px $hospital-green;
+}
+
+.icon__mobile-green{
+  background-image: url(../images/mobile-alt-solid_green.svg);
+  border:solid 2px #a0c0cf;
+
+}
+.icon__mobile-red{
+  background-image: url(../images/mobile-alt-solid_red.svg);
+  border:solid 2px #e95626;
+}
+
 .icon__mail{
   background-image: url(../images/envelope.svg);
   @include bg-img;
   background-size:16px;
 }
+.icon__mail-blue{
+  background-image: url(../images/envelope.svg);
+  border:solid 2px $hospital-green;
+}
+.icon__mail-red{
+  background-image: url(../images/envelope_red.svg);
+  border:solid 2px #e95626;
+}
+.icon__mail-green{
+  background-image: url(../images/envelope_green.svg);
+  border:solid 2px #a0c0cf;
+}
+
+
 .icon__linkedin{
-  background-image: url(../images/linkedin-in-brands.svg);
   @include bg-img;
   background-size:16px;
 }
+.icon__linkedin-blue{
+  background-image: url(../images/linkedin-in-brands.svg);
+  border:solid 2px $hospital-green;
+}
+.icon__linkedin-red{
+  background-image: url(../images/linkedin-in-brands_red.svg);
+  border:solid 2px #e95626;
+}
+.icon__linkedin-green{
+  background-image: url(../images/linkedin-in-brands_green.svg);
+  border:solid 2px #a0c0cf;
+}
+
+
+
+
 .icon__github{
-  background-image: url(../images/github-alt-brands.svg);
   @include bg-img;
   background-size:16px;
+}
+.icon__github-blue{
+  background-image: url(../images/github-alt-brands.svg);
+  border:solid 2px $hospital-green;  border:solid 2px $hospital-green;
+}
+.icon__github-red{
+  background-image: url(../images/github-alt-brands_red.svg);
+  @include bg-img;
+  background-size:16px;
+  border:solid 2px #e95626;
+}
+.icon__github-green{
+  background-image: url(../images/github-alt-brands_green.svg);
+  border:solid 2px #a0c0cf;
 }
