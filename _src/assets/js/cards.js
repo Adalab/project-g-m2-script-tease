@@ -11,12 +11,20 @@ const inputGithub = document.querySelector('.github_input');
 
 /*Variables que almacenan los destinos (donde se va a ver)*/
 
-const textName = document.querySelector('.img-text__title');
-const textJob = document.querySelector('.img-text__subtitle');
+// const textName = document.querySelector('.img-text__title');
+// const textJob = document.querySelector('.img-text__subtitle');
 const textMail = document.querySelector('.icon__mail');
 const textPhone = document.querySelector('.icon__mobile');
 const textLinkedin = document.querySelector('.icon__linkedin');
 const textGithub = document.querySelector('.icon__github');
+
+const textName = document.querySelector('.img-text__title');
+const textJob = document.querySelector('.img-text__subtitle');
+const iconMail = document.querySelector('.icon1');
+const iconPhone = document.querySelector('.icon2');
+const iconLinkedin = document.querySelector('.icon3');
+const iconGithub = document.querySelector('.icon4');
+
 
 function write(event){
 
@@ -41,37 +49,37 @@ function write(event){
   else if(event.currentTarget.classList.contains('phone')){
     textPhone.href = 'tel:' + inputValue;
     if(inputValue === ""){
-      textPhone.classList.add('hidden_v');
+      iconPhone.classList.add('hidden_v');
     }
     else{
-      textPhone.classList.remove('hidden_v');
+      iconPhone.classList.remove('hidden_v');
     }
   }
   else if(event.currentTarget.classList.contains('mail')){
     textMail.href = 'mailto:' + inputValue;
     if(inputValue === ""){
-      textMail.classList.add('hidden_v');
+      iconMail.classList.add('hidden_v');
     }
     else{
-      textMail.classList.remove('hidden_v');
+      iconMail.classList.remove('hidden_v');
     }
   }
   else if(event.currentTarget.classList.contains('linkedin_input')){
     textLinkedin.href =  'https://www.linkedin.com/in/'+ inputValue;
     if(inputValue === ""){
-      textLinkedin.classList.add('hidden_v');
+      iconLinkedin.classList.add('hidden_v');
     }
     else{
-      textLinkedin.classList.remove('hidden_v');
+      iconLinkedin.classList.remove('hidden_v');
     }
   }
   else if(event.currentTarget.classList.contains('github_input')){
     textGithub.href ='https://github.com/' + inputValue;
     if(inputValue === ""){
-      textGithub.classList.add('hidden_v');
+      iconGithub.classList.add('hidden_v');
     }
     else{
-      textGithub.classList.remove('hidden_v');
+      iconGithub.classList.remove('hidden_v');
     }
   }
 }
@@ -88,6 +96,7 @@ inputGithub.addEventListener('keyup', write);
 const palette1 = document.querySelector('.input1');
 const palette2 = document.querySelector('.input2');
 const palette3 = document.querySelector('.input3');
+
 
 const box = document.querySelector('.cards__img-wrapper');
 

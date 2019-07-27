@@ -145,16 +145,21 @@
   @include bg-img();
   position:relative;
 }
+
 // Para ocultar la imagen de usuario por si nos da un error. o el formato no es el adecuado.
+
 .image{
   position: absolute;
   height: 1px;
   width: 1px;
   top: -10px;
+  left: -10px;
   overflow:hidden;
 }
 .img__icons-box{
   padding: 10px 0 12px 20px;
+  display:flex;
+  min-height:55px;
 }
 .icons__list{
   @include clear-list();
@@ -167,8 +172,8 @@
 .icons__item{
   border-radius:50%;
   margin-right: 10px;
-  height:1px;
   padding-top:31px;
+  height:1px;
   width:32px;
   @include centered();
   position: relative;
