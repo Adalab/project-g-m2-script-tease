@@ -1,6 +1,11 @@
 .share__text-twitter{
   @include centered ();
   flex-direction: column;
+
+}
+
+.share__hidden{
+  visibility: hidden;
 }
 
 .share__title-twitter{
@@ -69,4 +74,5 @@
     margin-right: 30px;
   }
 }
+
 
