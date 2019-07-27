@@ -78,7 +78,22 @@
 .landing__-logo{
   text-align: center;
   color: $dull-orange;
+  font-family: "Font Awesome 5 Pro";
 }
+
+.landing__icon-design:before{
+  content: "\f248";
+}
+
+.landing__icon-fill:before{
+  content: "\f11c";
+}
+
+.landing__icon-share:before{
+  content: "\f1e0";
+  font-weight: 900;
+}
+
 .li-share {
   margin-right: 0px;
   display: flex;
