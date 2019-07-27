@@ -9,6 +9,11 @@
 .form__wrapper{
   @media all and (min-width: 768px){
     flex-grow:1;
+    max-width:399px;
+  }
+  @media all and (min-width: 1024px){
+    flex-grow:0;
+    width:399px;
   }
 }
 .form__fieldset {

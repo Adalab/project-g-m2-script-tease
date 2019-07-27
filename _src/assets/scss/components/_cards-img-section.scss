@@ -3,6 +3,10 @@
   @include centered();
   @media all and (min-width:768px){
     min-width:329px;
+    flex-grow:1;
+  }
+  @media all and (min-width:1024px){
+    flex-grow: 1;
   }
 }
 .cards__img-section .container{
