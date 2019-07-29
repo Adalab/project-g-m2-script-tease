@@ -17,8 +17,15 @@
 	},
 	"js": {
 		"src": [
+<<<<<<< HEAD
       "_src/assets/js/*.js"
     ],
+=======
+      "_src/assets/js/main.js",
+      "_src/assets/js/cards.js",
+      "_src/assets/js/desplegables.js"
+		],
+>>>>>>> desplegables
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
 	},

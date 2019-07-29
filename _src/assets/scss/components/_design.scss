@@ -1,3 +1,4 @@
+
 .design {
   padding: 0;
   color: $intermediate-grey;
@@ -24,7 +25,7 @@
   padding: 0 0 0 31px;
   // display:inline-block;
 }
-.desing__title:before {
+.desing__title:before{
   content: "\f248";
   position: absolute;
   left: 0;
@@ -33,6 +34,7 @@
   color: $dull-orange;
   font-weight: 400;
 }
+
 
 .desing__title:after {
   content: "\f077";
@@ -44,6 +46,7 @@
   font-family: "Font Awesome 5 Pro";
   color: $dark-grey;
 }
+
 .design__subtitle {
   font-weight: normal;
   font-size: 14px;
@@ -60,6 +63,7 @@
     margin-top: 25px;
   }
 }
+
 .color__group{
   margin-top: 4px;
 }
@@ -88,3 +92,16 @@
 .line-bottom{
   margin-bottom: 0px;
 }
+.open .desing__title:after{
+  transform: scale(-1);
+  }
+
+/*
+.open .rollContainer-js{
+    display: block;
+  }
+
+.rollContainer-js{
+  display:none;
+}*/
+
