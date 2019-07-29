@@ -1,5 +1,6 @@
 .cards__img-section{
   background: $color-card-img-section-bg;
+  height:100%;
   @include centered();
   @media all and (min-width:768px){
     min-width:329px;
