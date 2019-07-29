@@ -64,6 +64,17 @@ display:none;
 .open .rollContainer-js{
   display: block;
 }
+.cards-wrapper{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 
+}
+.cards__main-wrapper{
+  grid-row: 1fr;
+}
+.cards__footer-wrapper{
+  grid-row: auto;
+}
 
 
