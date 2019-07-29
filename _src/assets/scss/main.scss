@@ -1,3 +1,4 @@
+
 @import 'core/_variables.scss';
 @import 'core/buttons';
 @import 'core/typography';
@@ -72,6 +73,8 @@ display:none;
 }
 .cards__main-wrapper{
   grid-row: 1fr;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 .cards__footer-wrapper{
   grid-row: auto;
@@ -80,4 +83,10 @@ display:none;
 .cards__footer{
   grid-row-start: 2;
   grid-row-end: 3;
+}
+.cards__header{
+  grid-row: auto;
+}
+.cards__main{
+  grid-row: 1fr;
 }
