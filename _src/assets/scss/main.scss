@@ -64,18 +64,17 @@ display:none;
 .open .rollContainer-js{
   display: block;
 }
-.cards__main{
-  height: 100%;
-}
-.cards__page{
-  display:grid;
-  grid-template-rows: 1fr, auto;
-  min-height:100vh;
+.cards-wrapper{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 
 }
-.cards__wrapper{
-grid-row-start: 1;
-grid-row-end: 2;
+.cards__main-wrapper{
+  grid-row: 1fr;
+}
+.cards__footer-wrapper{
+  grid-row: auto;
 }
 
 .cards__footer{
