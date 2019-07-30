@@ -7,7 +7,7 @@
   }
   .design .container{
     border-bottom: solid 1px $color-card-fill_form-section-line;
-    padding-bottom: 30px;
+    padding-bottom: 7px;
     @media all and (min-width:768px){
       margin-right: 30px;
     }
@@ -37,14 +37,15 @@
 
 
 .desing__title:after {
-  content: "\f077";
+  content: "\f107";
   position: absolute;
   right: 0;
   top: 0;
-  height: 18px;
-  font-weight: 600;
+  //height: 18px;
+  font-weight: 900;
   font-family: "Font Awesome 5 Pro";
   color: $dark-grey;
+  //width: 16px;
 }
 
 .design__subtitle {
@@ -93,7 +94,7 @@
   margin-bottom: 0px;
 }
 .open .desing__title:after{
-  transform: scale(-1);
+  transform: rotate(-180deg);
   }
 
 /*
