@@ -11,6 +11,7 @@
 @import 'components/cards-header';
 @import 'components/cards-img-section';
 @import 'components/design';
+@import 'components/_cards-main.scss';
 @import 'components/_cards-form-section.scss';
 @import 'components/_cards-share.scss';
 @import 'components/_cards_share-twitter.scss';
@@ -62,31 +63,7 @@ p {
 .rollContainer-js{
 display:none;
 }
+
 .open .rollContainer-js{
   display: block;
-}
-.cards-wrapper{
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
-
-}
-.cards__main-wrapper{
-  grid-row: 1fr;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-.cards__footer-wrapper{
-  grid-row: auto;
-}
-
-.cards__footer{
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.cards__header{
-  grid-row: auto;
-}
-.cards__main{
-  grid-row: 1fr;
 }
