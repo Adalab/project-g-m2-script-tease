@@ -1,5 +1,33 @@
-![Adalab](_src/assets/images/logo-adalab-80px.png)
-# Adalab web starter kit
+# Script-Tease Group page. Awesome-profile-Cards.
+
+## Introducción.
+En este proyecto el cliente nos pidió realizar una aplicacion web para crear tarjetas de visita virtuales.
+Las tarjetas se deben poder personalizar en cuanto a colores, imagen y enlaces.
+La aplicación tiene dos páginas, una con el landing de la aplicación, que contiene el nombre y un pequeño resumen de su funcionalidad y una segunda página donde podemos acceder a la personalización y creación de la tarjeta.
+
+## Tecnologías usadas.
+
+En esta primera aproximación hemos realizado la estructura de la página (con HTML5) de las dos páginas, basándonos en una aproximación movil-first. Le hemos añadido estilos usando sass.
+
+Y le hemos añadido las funcionalidades básicas en JavaScript.
+
+## Funcionalidades añadidas.
+
+Entre estas funcionalidades podemos resaltar:
+
+  - Cambios en los input se reflejen automaticamente en la previsualización de la tarjeta.
+  - Los iconos a las redes sociales solo aparecen si rellenamos el campo adecuado.
+  - Estos iconos aparecen en el orden en que son escritos, si hemos rellenado los datos el orden resultante es el indicado por el cliente.
+  - Solo será visible una fase de la personalización en cada momento, cuando desplegamos una de ellas las demás se colapsan automaticamente.
+
+En la siguiente etapa del proyecto nos enfocaremos en desarrollar el resto de funcionalidades solicitadas por el cliente.
+
+
+Para este proyecto hemos usado este starter kit de adalab.
+
+
+## Adalab web starter kit
+
 Ahoy! Esta es nuestro Starter Kit en node/gulp para este primer contacto con el desarrollo web
 Incluye SCSS, un sistema de plantillas HTMl y un web server.
 

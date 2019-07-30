@@ -1,3 +1,4 @@
+
 @import 'core/_variables.scss';
 @import 'core/buttons';
 @import 'core/typography';
@@ -21,7 +22,7 @@
   box-sizing: border-box;
 }
 .container-page{
-  height:100vh;
+  min-height:100vh;
   display: grid;
   grid-template-rows: (1fr auto);
 }
@@ -37,6 +38,12 @@
   grid-template-rows:(auto 1fr);*/
 }
 
+.hidden_v{
+  display:none;
+}
+
+
+/*Reset*/
 
 fieldset{
   border:none;
@@ -58,6 +65,28 @@ display:none;
 .open .rollContainer-js{
   display: block;
 }
+.cards-wrapper{
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 
+}
+.cards__main-wrapper{
+  grid-row: 1fr;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.cards__footer-wrapper{
+  grid-row: auto;
+}
 
-
+.cards__footer{
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.cards__header{
+  grid-row: auto;
+}
+.cards__main{
+  grid-row: 1fr;
+}

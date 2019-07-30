@@ -1,6 +1,11 @@
 .share__text-twitter{
   @include centered ();
   flex-direction: column;
+
+}
+
+.share__hidden{
+  display: none;
 }
 
 .share__title-twitter{
@@ -33,6 +38,12 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 
+.line-bottom{
+  border-bottom: solid 1px #d8d8d8;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
 .text-link-twitter{
   text-transform: lowercase;
   padding-left:9px;
@@ -59,8 +70,8 @@
 .content__twitter-container{
   .line-bottom{
   border-bottom: solid 1px #d8d8d8;
-  margin-bottom: 30px;
-  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 }
 
@@ -69,4 +80,5 @@
     margin-right: 30px;
   }
 }
+
 

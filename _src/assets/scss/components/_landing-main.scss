@@ -5,6 +5,7 @@
   position: relative;
   @media all and (min-width:768px){
     padding-top: 31px;
+    min-height: 460px;
   }
 
 }
@@ -77,7 +78,22 @@
 .landing__-logo{
   text-align: center;
   color: $dull-orange;
+  font-family: "Font Awesome 5 Pro";
 }
+
+.landing__icon-design:before{
+  content: "\f248";
+}
+
+.landing__icon-fill:before{
+  content: "\f11c";
+}
+
+.landing__icon-share:before{
+  content: "\f1e0";
+  font-weight: 900;
+}
+
 .li-share {
   margin-right: 0px;
   display: flex;
@@ -123,7 +139,7 @@
   transform: translate(-50%);
   bottom: 30px;
     @media all and (min-width:768px){
-      bottom: 59px;
-
+      // bottom: 59px;
+      transform: translate(-50%);
 }
 }
