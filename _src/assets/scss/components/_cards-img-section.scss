@@ -147,8 +147,13 @@
   margin-bottom:4px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  // word-wrap: break-word
+  // white-space: nowrap;
+  word-wrap: break-word;
+}
+.img-text__subtitle{
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+  word-wrap: break-word;
 }
 .cards__img{
   background-image: url(https://thispersondoesnotexist.com/image);
