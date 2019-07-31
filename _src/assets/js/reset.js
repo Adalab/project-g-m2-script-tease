@@ -19,7 +19,13 @@ function reset(event){
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
-  // Resetear la imagen.
+  palette1.checked = true;
+  palette2.checked = false;
+  palette3.checked = false;
+  box.classList.remove('cards__img-wrapper-op2');
+  box.classList.remove('cards__img-wrapper-op3');
+  box.classList.add('cards__img-wrapper-op1');
+    // Resetear la imagen.
 }
 
 resetBtn.addEventListener('click', reset);
