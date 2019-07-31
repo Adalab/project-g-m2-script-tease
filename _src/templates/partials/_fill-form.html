@@ -27,15 +27,16 @@
 
       <div class="form__fieldset-add_img_wrapper">
         <p class="form__fieldset-add_img-text">Imagen de perfil</p>
+      <div class="js__profile-image">
         <button
-          class="form__fieldset-add_img-button"
+          class="form__fieldset-add_img-button js__profile-trigger"
           type="button"
           name="add_img"
-        >
-          Añadir imagen
-        </button>
-        <div class="form__fieldset-add_img-mini_container"></div>
+          >Añadir imagen</button>
+        <input name="photo" type="file" id="img-selector" class="action__hiddenField js__profile-upload-btn input-update">
+        <div class="form__fieldset-add_img-mini_container js__profile-preview"></div>
       </div>
+    </div>
 
       <label for="email" class="form__fieldset-content">Email*</label>
       <input
