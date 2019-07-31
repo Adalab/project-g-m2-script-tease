@@ -1,5 +1,5 @@
 'use strict';
-
+console.log(' >>> Cards ready :D');
 /* Variables que almacenan los input, se podria hacer con un SelectorAll*/
 
 const inputName = document.querySelector('.name');
@@ -120,3 +120,4 @@ function changeColor (event) {
 palette1.addEventListener('click', changeColor);
 palette2.addEventListener('click', changeColor);
 palette3.addEventListener('click', changeColor);
+
