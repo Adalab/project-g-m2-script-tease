@@ -37,7 +37,8 @@
    align-items: baseline;
    text-transform:uppercase;
    position:relative;
-   margin-bottom:25px;
+   //margin-bottom:25px;
+   padding-bottom: 7px;
    margin-top:10px;
  }
 
@@ -59,14 +60,15 @@
  }
 
  .form__fieldset-main_title:after {
-  content:"\f077";
-  width: 16px;
-  height:18px;
+  content:"\f107";
+  position: absolute;
+  right: 0;
+  top: 0;
+  //height: 18px;
+  font-weight: 900;
   font-family: "Font Awesome 5 Pro";
-  color:$color-card-fill_form-section-arrow;
-  position:absolute;
-  right:0;
-  top:4px;
+  color: $dark-grey;
+  //width: 16px;
  }
 
  // div fieldset
@@ -139,12 +141,11 @@
    height:30px;
  }
 
- .line-bottom {
-   margin: 30px 0 10px;
+ .line-bottom{
   border-bottom:solid 1px $color-card-fill_form-section-line;
  }
  .open .form__fieldset-main_title:after {
-  transform: scale(-1);
+  transform: rotate(-180deg);
   }
 /*
 .open .rollContainer-js{
