@@ -10,17 +10,7 @@ function rollup (event){
   //console.log('elementoclick',event.currentTarget);
   //console.log('id',event.currentTarget.id);
   //console.log('padre',event.currentTarget.parentNode)
-  //event.currentTarget.parentElement.classList.toggle('open');
-  if (event.currentTarget.parentElement.classList.contains('open')){
-    event.currentTarget.parentElement.classList.remove('open');
-  }else{
-   for(const item of containerColorsRoll){
-     item.parentElement.classList.remove('open');
-   }
-    event.currentTarget.parentElement.classList.add('open');
-
-  }
-
+  event.currentTarget.parentNode.classList.toggle('open');
 }
 for(let i = 0; i < containerClick.length; i++){
   containerClick[i].addEventListener('click',rollup);
