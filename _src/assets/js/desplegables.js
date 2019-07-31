@@ -1,7 +1,7 @@
 'use strict';
 const containerClick = document.querySelectorAll('.containerClick-js');
 //console.log(containerClick);
-const containerColorsRoll = document.querySelectorAll('.-js');
+const containerColorsRoll = document.querySelectorAll('.rollContainer-js');
 //console.log(containerColorsRoll);
 const containerMother = document.querySelectorAll('.containerMother-js');
 //console.log(containerMother);
