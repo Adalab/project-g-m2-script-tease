@@ -5,6 +5,7 @@
   @media all and (min-width:768px){
     min-width:329px;
     flex-grow:1;
+    border-radius: 6px;
   }
   @media all and (min-width:1024px){
     flex-grow: 1;
@@ -143,6 +144,15 @@
 }
 .img__title{
   margin-bottom:4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+  word-wrap: break-word;
+}
+.img-text__subtitle{
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+  word-wrap: break-word;
 }
 .cards__img{
   background-image: url(https://thispersondoesnotexist.com/image);

@@ -96,8 +96,6 @@ inputGithub.addEventListener('keyup', write);
 const palette1 = document.querySelector('.input1');
 const palette2 = document.querySelector('.input2');
 const palette3 = document.querySelector('.input3');
-
-
 const box = document.querySelector('.cards__img-wrapper');
 
 function changeColor (event) {
