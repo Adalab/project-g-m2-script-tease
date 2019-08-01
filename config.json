@@ -17,8 +17,9 @@
 	},
 	"js": {
 		"src": [
-      "_src/assets/js/get-avatar.js",
       "_src/assets/js/main.js",
+      "_src/assets/js/get-avatar.js",
+      "_src/assets/js/profile-image.js",
       "_src/assets/js/cards.js",
       "_src/assets/js/reset.js",
       "_src/assets/js/desplegables.js",

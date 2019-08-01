@@ -32,6 +32,7 @@ function writeImage() {
    */
   profileContainerImage.style.backgroundImage = `url(${fr.result})`;
   profileImage.src = fr.result;
+  profileImage.alt = `${inputName.value}`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
 
