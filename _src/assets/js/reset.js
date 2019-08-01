@@ -25,7 +25,10 @@ function reset(event){
   box.classList.remove('cards__img-wrapper-op2');
   box.classList.remove('cards__img-wrapper-op3');
   box.classList.add('cards__img-wrapper-op1');
-    // Resetear la imagen.
-}
+  cardsImage.style.backgroundImage = `url(${defaultImage})`;
+  preview.style.backgroundImage = `url(${defaultImage})`;
+  image.src = defaultImage;
+  image.alt = 'Imagen por defecto';
+  }
 
 resetBtn.addEventListener('click', reset);
