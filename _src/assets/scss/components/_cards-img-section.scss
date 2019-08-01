@@ -154,8 +154,10 @@
   // white-space: nowrap;
   word-wrap: break-word;
 }
+
+// cambios para select imagen
 .cards__img{
-  background-image: url(https://thispersondoesnotexist.com/image);
+  // background-image: url(https://thispersondoesnotexist.com/image);
   height:200px;
   @include bg-img();
   position:relative;
