@@ -119,3 +119,5 @@ palette1.addEventListener('click', changeColor);
 palette2.addEventListener('click', changeColor);
 palette3.addEventListener('click', changeColor);
 
+
+
