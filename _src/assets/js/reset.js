@@ -15,7 +15,7 @@ function reset(event){
   textGithub.href ='https://github.com/';
   inputName.value = '';
   inputJob.value='';
-  inputMail.value = '';
+  inputPhone.value  = '';
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
