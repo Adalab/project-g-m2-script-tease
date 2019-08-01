@@ -8,18 +8,21 @@ const imageContain = document.querySelector('.js__profile-image');
 const imagePreview = document.querySelector('.js__profile-preview');
 
 // function getImage(e){
-function selectorImage(e) {
-  var myFile = e.currentTarget.files[0];
+function selectorImage(event) {
+  // variable de tus imágenes (del usuario)
+  var myImages = event.currentTarget.files[0];
   read.addEventListener('load', writeImage);
   read.readAsDataURL(myFile);
 }
 
 function writeImage() {
+  // la url de la imagen que vas a cargar
   imageContain.style.backgroundImage = `url(${read.result})`;
+  // la url de la imagen que vas a cargar en la preview
   imagePreview.style.backgroundImage = `url(${read.result})`;
 }
 
-// function fakeFileClick() {
+// función para click sobre el input y seleccionar imagen
 function selectorImage() {
 input.click();
 }
