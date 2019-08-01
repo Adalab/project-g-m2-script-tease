@@ -30,10 +30,11 @@ const datos={
 
 function showURL(data){
   if(data.success){
-    urlShare.innerHTML = '<a href=' + data.cardURL + '>' + data.cardURL + '</a>';
-    shareTwitter();
+    urlShare.innerHTML += '<a href=' + data.cardURL + '>' + data.cardURL + '</a>';
+
+    twitterBtn.href = `https://twitter.com/intent/tweet?text=Esta%20es%20mi%20nueva%20tarjeta:%20${data.cardURL}"data-size="large"`;
   }else{
-    urlShare.innerHTML = 'ERROR:' + data.error;
+    urlShare.innerHTML += 'ERROR:' + data.error;
   }
 }
 
