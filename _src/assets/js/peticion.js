@@ -50,3 +50,32 @@ function showURL(data){
   .then()
 }*/
 btn.addEventListener('click',writeUrl);
+
+//CACHEO
+'use strict';
+const inputName = document.querySelector('.name');
+const inputJob = document.querySelector('.job');
+const inputMail = document.querySelector('.mail');
+const inputPhone = document.querySelector('.phone');
+const inputLinkedin = document.querySelector('.linkedin_input');
+const inputGithub = document.querySelector('.github_input');
+
+function getDatosUser(){
+
+const datos={
+  'palette': paletteOption,
+  'name': inputName.value,
+  'job': inputJob.value,
+  'phone': inputPhone.value,
+  'email': inputPhone.value ,
+  'linkedin': inputLinkedin.value,
+  'github': inputGithub.value,
+  'photo': photoSend
+}
+
+const getDatos = JSON.stringify(datos);
+ localStorage.setItem('datos', getDatos);
+ console.log(getDatos);
+ return getDatos;
+}
+
