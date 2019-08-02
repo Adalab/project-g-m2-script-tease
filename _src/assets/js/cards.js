@@ -24,7 +24,7 @@ const iconMail = document.querySelector('.icon1');
 const iconPhone = document.querySelector('.icon2');
 const iconLinkedin = document.querySelector('.icon3');
 const iconGithub = document.querySelector('.icon4');
-
+let paletteOption = 1;
 
 function write(event){
 
@@ -48,7 +48,7 @@ function write(event){
   }
   else if(event.currentTarget.classList.contains('phone')){
     textPhone.href = 'tel:' + inputValue;
-    if(inputValue === ""){
+    if(inputValue === ''){
       iconPhone.classList.add('hidden_v');
     }
     else{
@@ -57,7 +57,7 @@ function write(event){
   }
   else if(event.currentTarget.classList.contains('mail')){
     textMail.href = 'mailto:' + inputValue;
-    if(inputValue === ""){
+    if(inputValue === ''){
       iconMail.classList.add('hidden_v');
     }
     else{
@@ -66,7 +66,7 @@ function write(event){
   }
   else if(event.currentTarget.classList.contains('linkedin_input')){
     textLinkedin.href =  'https://www.linkedin.com/in/'+ inputValue;
-    if(inputValue === ""){
+    if(inputValue === ''){
       iconLinkedin.classList.add('hidden_v');
     }
     else{
@@ -75,7 +75,7 @@ function write(event){
   }
   else if(event.currentTarget.classList.contains('github_input')){
     textGithub.href ='https://github.com/' + inputValue;
-    if(inputValue === ""){
+    if(inputValue === ''){
       iconGithub.classList.add('hidden_v');
     }
     else{
@@ -106,12 +106,15 @@ function changeColor (event) {
 
   if (event.currentTarget.value === '1') {
     box.classList.add('cards__img-wrapper-op1');
+    paletteOption = 1;
   }
   else if (event.currentTarget.value === '2') {
     box.classList.add('cards__img-wrapper-op2');
+    paletteOption = 2;
   }
   else {
     box.classList.add('cards__img-wrapper-op3');
+    paletteOption = 3;
   }
 }
 

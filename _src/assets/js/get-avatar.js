@@ -15,10 +15,12 @@ const profileContainerImage = document.querySelector('.js__profile-container-ima
  * al tener los datos listos
  * @param {evento} e
  */
+
 function getImage(e){
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
+  console.log(e.currentTarget.files);
 }
 
 
@@ -26,6 +28,7 @@ function getImage(e){
  * Una vez tenemos los datos listos en el FR podemos
  * trabajar con ellos ;)
  */
+
 function writeImage() {
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado
@@ -42,7 +45,7 @@ function writeImage() {
  * que está oculto
  */
 function fakeFileClick() {
- fileField.click();
+  fileField.click();
 }
 
 /**
