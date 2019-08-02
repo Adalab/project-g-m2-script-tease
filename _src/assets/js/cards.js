@@ -32,18 +32,18 @@ function write(event){
 
   if(event.currentTarget.classList.contains('name')){
 
-    if(inputValue !== ""){
+    if(inputValue !== ''){
       textName.innerHTML = inputValue;
     /* Para que vuelva a poner algo si el campo se queda vacio */
     }else{
-      textName.innerHTML = "Nombre Apellido";
+      textName.innerHTML = 'Nombre Apellido';
     }
   }
   else if(event.currentTarget.classList.contains('job')){
-    if(inputValue !== ""){
+    if(inputValue !== ''){
       textJob.innerHTML = inputValue;
     }else{
-      textJob.innerHTML = "Front-end developer";
+      textJob.innerHTML = 'Front-end developer';
     }
   }
   else if(event.currentTarget.classList.contains('phone')){

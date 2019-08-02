@@ -3,6 +3,15 @@
 const btn = document.querySelector('.button-create');
 const urlShare = document.querySelector('.link-twitter');
 
+let photoSend = '';
+
+if(!fr.result){
+  photoSend = defaultImage;
+}
+else{
+  photoSend = fr.result;
+}
+
 function writeUrl(){
   const datos={
     'palette': paletteOption,
@@ -12,8 +21,8 @@ function writeUrl(){
     'email': inputPhone.value ,
     'linkedin': inputLinkedin.value,
     'github': inputGithub.value,
-    'photo': fr.result
-}
+    'photo': photoSend
+  };
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
     body: JSON.stringify(datos),

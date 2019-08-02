@@ -161,6 +161,7 @@
   height:200px;
   @include bg-img();
   position:relative;
+  overflow:hidden;
 }
 
 // Para ocultar la imagen de usuario por si nos da un error. o el formato no es el adecuado.
@@ -171,7 +172,6 @@
   width: 1px;
   top: -10px;
   left: -10px;
-  overflow:hidden;
 }
 .img__icons-box{
   padding: 10px 0 12px 20px;
