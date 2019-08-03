@@ -37,7 +37,7 @@ function writeUrl(){
 
 function showURL(data){
   if(data.success){
-    urlShare.innerHTML = '<a href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
+    urlShare.innerHTML = '<a class="twitter-url" href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
     // shareTwitter();
   }else{
     urlShare.innerHTML = 'ERROR:' + data.error;
