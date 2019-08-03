@@ -19,3 +19,14 @@ function preventFormSend(event){
 // eventos (click botón y submit)
 cardForm.addEventListener('submit', preventFormSend);
 shareButton.addEventListener('click', showTwitter);
+
+
+
+
+
+
+
+
+
+
+// He creado esta tarjeta en Awesome Profile cards, ¿que te parece?, tu también puedes hacer la tuya.

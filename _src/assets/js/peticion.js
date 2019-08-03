@@ -38,15 +38,15 @@ function writeUrl(){
 function showURL(data){
   if(data.success){
     urlShare.innerHTML = '<a class="twitter-url" href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
-    // shareTwitter();
+    shareTwitter(data.cardURL);
   }else{
     urlShare.innerHTML = 'ERROR:' + data.error;
   }
 }
 
-/*function shareTwitter(){
-  fetch()
-  .then()
-  .then()
-}*/
+function shareTwitter(cardURL){
+  const urlTwitter = 'https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20en%20Awesome%20Profile%20cards%2C%20%C2%BFque%20te%20parece%3F.%20'
+  const finalURL = urlTwitter + cardURL;
+  document.querySelector('.button-twitter').href = finalURL;
+}
 btn.addEventListener('click',writeUrl);
