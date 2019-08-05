@@ -10,7 +10,7 @@
 // const inputLinkedin = document.querySelector('.linkedin_input');
 // const inputGithub = document.querySelector('.github_input');
 
-let urlShare = document.querySelector('.link-twitter');
+//let urlShare = document.querySelector('.link-twitter');
 const twitterUrl = document.querySelector('.button-twitter');
 // const resetBtn = document.querySelector('.js__reset');
 
