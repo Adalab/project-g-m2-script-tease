@@ -3,12 +3,12 @@ console.log(' >>> Cards ready :D');
 
 /* Variables que almacenan los input, se podria hacer con un SelectorAll*/
 
-// const inputName = document.querySelector('.name');
-// const inputJob = document.querySelector('.job');
-// const inputMail = document.querySelector('.mail');
-// const inputPhone = document.querySelector('.phone');
-// const inputLinkedin = document.querySelector('.linkedin_input');
-// const inputGithub = document.querySelector('.github_input');
+const inputName = document.querySelector('.name');
+const inputJob = document.querySelector('.job');
+const inputMail = document.querySelector('.mail');
+const inputPhone = document.querySelector('.phone');
+const inputLinkedin = document.querySelector('.linkedin_input');
+const inputGithub = document.querySelector('.github_input');
 
 /*Variables que almacenan los destinos (donde se va a ver)*/
 
@@ -223,9 +223,11 @@ function init() {
   }
 
   if (localStorage.getItem('image')) {
+    //console.log(localStorage.getItem('image'));
     image.src = localStorage.getItem('image');
     preview.style.backgroundImage = `url(${localStorage.getItem('image')})`;
     cardsImage.style.backgroundImage = `url(${localStorage.getItem('image')})`;
+
   } else {
     image.src = defaultImage;
     preview.style.backgroundImage = `url(${defaultImage})`;

@@ -17,7 +17,7 @@ function preventFormSend(event){
 }
 
 // eventos (click botón y submit)
-cardForm.addEventListener('submit', preventFormSend);
+//cardForm.addEventListener('submit', preventFormSend);
 shareButton.addEventListener('click', showTwitter);
 
 
