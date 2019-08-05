@@ -14,7 +14,6 @@ function reset(){
   disableTwitter();
 }
 
-
 function hideIcons(){
   iconMail.classList.add('hidden_v');
   iconPhone.classList.add('hidden_v');
