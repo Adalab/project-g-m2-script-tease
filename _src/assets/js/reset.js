@@ -31,7 +31,7 @@ function setDefaultInputs(){
   inputName.value = '';
   inputJob.value = '';
   inputPhone.value = '';
-  inputPhone.value = '';
+  inputMail.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
 }
