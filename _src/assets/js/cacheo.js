@@ -1,38 +1,42 @@
 //CACHEO
 
+'use strict';
+
 // llamar a todas las partes que queremos guardar
-const inputName = document.querySelector('.name');
-const inputJob = document.querySelector('.job');
-const inputMail = document.querySelector('.mail');
-const inputPhone = document.querySelector('.phone');
-const inputLinkedin = document.querySelector('.linkedin_input');
-const inputGithub = document.querySelector('.github_input');
-const urlShare = document.querySelector('.link-twitter');
-const twitterUrl = document.querySelector('.button-twitter.');
-const resetBtn = document.querySelector('.js__reset');
+// const inputName = document.querySelector('.name');
+// const inputJob = document.querySelector('.job');
+// const inputMail = document.querySelector('.mail');
+// const inputPhone = document.querySelector('.phone');
+// const inputLinkedin = document.querySelector('.linkedin_input');
+// const inputGithub = document.querySelector('.github_input');
+
+let urlShare = document.querySelector('.link-twitter');
+const twitterUrl = document.querySelector('.button-twitter');
+// const resetBtn = document.querySelector('.js__reset');
 
 function getDatosUser(){
-const datos={
-  'palette': paletteOption,
-  'name': inputName.value,
-  'job': inputJob.value,
-  'phone': inputPhone.value,
-  'email': inputMail.value ,//recordar Lunes
-  'linkedin': inputLinkedin.value,
-  'github': inputGithub.value,
-  'photo': photoSend
-}
+  const datos={
+    'palette': paletteOption,
+    'name': inputName.value,
+    'job': inputJob.value,
+    'phone': inputPhone.value,
+    'email': inputMail.value ,//recordar Lunes
+    'linkedin': inputLinkedin.value,
+    'github': inputGithub.value,
+    'photo': photoSend
+  }
 
-// guardando los datos. Pasados a cadena
-let getDatos = JSON.stringify(datos);
- localStorage.setItem('datos', getDatos);
- console.log(getDatos);
- return getDatos;
+  // guardando los datos. Pasados a cadena
+
+  let getDatos = JSON.stringify(datos);
+  localStorage.setItem('datos', getDatos);
+  console.log(getDatos);
+  return getDatos;
 }
 
 // recuperación de los datos. Pasados a objeto
 function loadDatos (){
-  getDatos = localStorage.getItem('datos');
+  let getDatos = localStorage.getItem('datos');
   if (getDatos !=null) {
     datos = JSON.parse (getDatos);
 

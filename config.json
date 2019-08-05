@@ -24,7 +24,8 @@
       "_src/assets/js/peticion.js",
       "_src/assets/js/cards.js",
       "_src/assets/js/desplegables.js",
-      "_src/assets/js/twitter.js"
+      "_src/assets/js/twitter.js",
+      "_src/assets/js/cacheo.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
