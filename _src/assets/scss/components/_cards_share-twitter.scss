@@ -4,7 +4,11 @@
 
 }
 
-.share__hidden{
+// .share__hidden{
+//   display: none;
+// }
+
+.hide-twitter{
   display: none;
 }
 
@@ -17,11 +21,13 @@
 .share__title-twitter::first-letter{
   text-transform: uppercase;
 }
-.link-twitter{
+.link-twitter .twitter-url{
+  margin-top: 5px;
+  display: flex;
+  text-align: center;
   font-size: $font-xs;
   text-transform: lowercase;
   color: $dull-orange;
-
 }
 .button-twitter{
   background-color: $twittwe-blue;
