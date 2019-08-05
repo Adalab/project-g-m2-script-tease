@@ -27,7 +27,7 @@ function getDatosUser(){
   }
 
   // guardando los datos. Pasados a cadena
-
+// conditional????
   let getDatos = JSON.stringify(datos);
   localStorage.setItem('datos', getDatos);
   console.log(getDatos);
@@ -94,6 +94,8 @@ function resetInfo () {
 // no estoy segura de si es a esta parte a quien hay que aplicar el evento
 twitterUrl.addEventListener('click', serverSend);
 resetBtn.addEventListener('click', resetInfo);
+
+// addEventListener (keyup)
 
 loadDatos();
 
