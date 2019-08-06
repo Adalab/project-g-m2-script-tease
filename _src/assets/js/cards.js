@@ -118,13 +118,14 @@ function changeColor(event) {
   box.classList.remove('cards__img-wrapper-op1');
   box.classList.remove('cards__img-wrapper-op2');
   box.classList.remove('cards__img-wrapper-op3');
+  palette1.removeAttribute('checked',false) ;
+  palette2.removeAttribute('checked',false) ;
+  palette3.removeAttribute('checked',false) ;
 
   if (event.currentTarget.value === '1') {
     const inputValue = event.currentTarget.value;
     box.classList.add('cards__img-wrapper-op1');
     palette1.setAttribute('checked',true);
-    palette2.removeAttribute('checked',false) ;
-    palette3.removeAttribute('checked',false) ;
     paletteOption = 1;
     localStorage.setItem('palette', inputValue);
   }
@@ -132,8 +133,6 @@ function changeColor(event) {
     const inputValue = event.currentTarget.value;
     box.classList.add('cards__img-wrapper-op2');
     palette2.setAttribute('checked',true);
-    palette1.removeAttribute('checked',false) ;
-    palette3.removeAttribute('checked',false) ;
     paletteOption = 2;
     localStorage.setItem('palette', inputValue);
   }
@@ -141,8 +140,6 @@ function changeColor(event) {
     const inputValue = event.currentTarget.value;
     box.classList.add('cards__img-wrapper-op3');
     palette3.setAttribute('checked',true);
-    palette2.removeAttribute('checked',false) ;
-    palette1.removeAttribute('checked',false) ;
     paletteOption = 3;
     localStorage.setItem('palette', inputValue);
   }
@@ -197,23 +194,20 @@ function init() {
 
   if (localStorage.getItem('palette')) {
     //console.log(localStorage.getItem('palette'));
+    palette2.removeAttribute('checked',false);
+    palette1.removeAttribute('checked',false);
+    palette3.removeAttribute('checked',false);
+
     if (localStorage.getItem('palette') === '2') {
-      console.log(localStorage.getItem('palette'));
       palette2.setAttribute('checked',true);
-      palette1.removeAttribute('checked',false);
-      palette3.removeAttribute('checked',false);
       box.classList.add('cards__img-wrapper-op2');
     }
     else if (localStorage.getItem('palette') === '3') {
       palette3.setAttribute('checked',true);
-      palette2.removeAttribute('checked',false);
-      palette1.removeAttribute('checked',false);
       box.classList.add('cards__img-wrapper-op3');
     }
     else {
       palette1.setAttribute('checked',true);
-      palette3.removeAttribute('checked',false);
-      palette2.removeAttribute('checked',false);
       box.classList.add('cards__img-wrapper-op1');
     }
   } else{

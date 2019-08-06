@@ -125,7 +125,10 @@
  .action__hiddenField {
   /* Ocultamos el input de tipo "file" porque no podemos
   darle los estilos que queremos */
-  display: none;
+  //display: none;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
  .form__fieldset-add_img-button {
