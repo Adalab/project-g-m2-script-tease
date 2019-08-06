@@ -18,9 +18,12 @@ const profileContainerImage = document.querySelector('.js__profile-container-ima
 
 function getImage(e){
   var myFile = e.currentTarget.files[0];
+  console.log('imagen select',e.currentTarget.files[0]);
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
   console.log(e.currentTarget.files);
+  localStorage.setItem('image',fr.result);
+
 }
 
 
@@ -35,6 +38,7 @@ function writeImage() {
    */
   profileContainerImage.style.backgroundImage = `url(${fr.result})`;
   profileImage.src = fr.result;
+  localStorage.setItem('image',fr.result);
   profileImage.alt = `${inputName.value}`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }

@@ -5,14 +5,22 @@ const urlShare = document.querySelector('.link-twitter');
 
 let photoSend = '';
 
-if(!fr.result){
-  photoSend = defaultImage;
-}
-else{
-  photoSend = fr.result;
-}
 
 function writeUrl(){
+  if(!fr.result && !localStorage.getItem('image')){
+    photoSend = defaultImage;
+    console.log('defecto',photoSend);
+  }
+  else if(!fr.result && localStorage.getItem('image')){
+    photoSend = localStorage.getItem('image');
+    console.log('storage',photoSend);
+  }
+  else{
+    photoSend = fr.result;
+
+    localStorage.setItem('image',photoSend );
+    console.log('selected',photoSend);
+  }
   const datos={
     'palette': paletteOption,
     'name': inputName.value,
@@ -37,16 +45,19 @@ function writeUrl(){
 
 function showURL(data){
   if(data.success){
-    urlShare.innerHTML = '<a href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
-    // shareTwitter();
+    urlShare.innerHTML = '<a class="twitter-url" href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
+    shareTwitter(data.cardURL);
   }else{
     urlShare.innerHTML = 'ERROR:' + data.error;
   }
 }
 
-/*function shareTwitter(){
-  fetch()
-  .then()
-  .then()
-}*/
+function shareTwitter(cardURL){
+  const urlTwitter = encodeURIComponent('He creado esta tarjeta con Awesome Profile Cards. ¿Qué te parece?');
+
+  const hastag = encodeURIComponent('adalab,script-tease,adalaber,frontEnd,awesomeCards');
+
+  const finalURL = `https://twitter.com/intent/tweet?text=${urlTwitter}&url=${cardURL}&hashtags=${hastag}`;
+  document.querySelector('.button-twitter').href = finalURL;
+}
 btn.addEventListener('click',writeUrl);
