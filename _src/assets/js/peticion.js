@@ -25,7 +25,7 @@ function writeUrl(){
     'name': inputName.value,
     'job': inputJob.value,
     'phone': inputPhone.value,
-    'email': inputPhone.value ,
+    'email': inputMail.value ,
     'linkedin': inputLinkedin.value,
     'github': inputGithub.value,
     'photo': photoSend

@@ -21,7 +21,7 @@ for(let i = 0; i < containerClick.length; i++){
   containerClick[i].addEventListener('click',rollup);
 }
 function showTwitterSection(){
-  containerTwitter.classList.remove('hide-twitter');
+  containerTwitter.classList.remove('hidden');
 }
 
 createButton.addEventListener('click', showTwitterSection);

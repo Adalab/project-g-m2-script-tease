@@ -1,4 +1,5 @@
 'use strict';
+// eslint-disable-next-line no-console
 console.log(' >>> Cards ready :D');
 
 /* Variables que almacenan los input, se podria hacer con un SelectorAll*/
@@ -9,6 +10,12 @@ const inputMail = document.querySelector('.mail');
 const inputPhone = document.querySelector('.phone');
 const inputLinkedin = document.querySelector('.linkedin_input');
 const inputGithub = document.querySelector('.github_input');
+const labelName = document.querySelector('.name__label');
+const labelJob = document.querySelector('.job__label');
+const labelMail = document.querySelector('.mail__label');
+const labelPhone = document.querySelector('.phone__label');
+const labelLinkedin = document.querySelector('.linkedin__label');
+const labelGithub = document.querySelector('.github__label');
 
 /*Variables que almacenan los destinos (donde se va a ver)*/
 
@@ -34,18 +41,22 @@ function write(event) {
     if (inputValue !== '') {
       textName.innerHTML = inputValue;
       localStorage.setItem('name', inputValue);
+      labelName.classList.remove('red');
     } else {
       textName.innerHTML = 'Nombre Apellido';
       localStorage.removeItem('name');
+      labelName.classList.add('red');
     }
   }
   else if (event.currentTarget.classList.contains('job')) {
     if (inputValue !== '') {
       textJob.innerHTML = inputValue;
       localStorage.setItem('job', inputValue);
+      labelJob.classList.remove('red');
     } else {
       textJob.innerHTML = 'Front-end developer';
       localStorage.removeItem('job');
+      labelJob.classList.add('red');
     }
   }
   else if (event.currentTarget.classList.contains('phone')) {
@@ -65,9 +76,11 @@ function write(event) {
     if (inputValue === '') {
       iconMail.classList.add('hidden');
       localStorage.removeItem('mail');
+      labelMail.classList.add('red');
     }
     else {
       iconMail.classList.remove('hidden');
+      labelMail.classList.remove('red');
     }
   }
   else if (event.currentTarget.classList.contains('linkedin_input')) {
@@ -76,9 +89,11 @@ function write(event) {
     if (inputValue === '') {
       iconLinkedin.classList.add('hidden');
       localStorage.removeItem('linkedin');
+      labelLinkedin.classList.add('red');
     }
     else {
       iconLinkedin.classList.remove('hidden');
+      labelLinkedin.classList.remove('red');
     }
   }
   else if (event.currentTarget.classList.contains('github_input')) {
@@ -87,9 +102,11 @@ function write(event) {
     if (inputValue === '') {
       iconGithub.classList.add('hidden');
       localStorage.removeItem('github');
+      labelGithub.classList.add('red');
     }
     else {
       iconGithub.classList.remove('hidden');
+      labelGithub.classList.remove('red');
     }
   }
 }
@@ -147,14 +164,18 @@ palette3.addEventListener('click', changeColor);
 function init() {
   if (localStorage.getItem('name')) {
     inputName.value = localStorage.getItem('name');
+    labelName.classList.remove('red');
   } else {
     inputName.value = '';
+    labelName.classList.add('red');
   }
 
   if (localStorage.getItem('job')) {
     inputJob.value = localStorage.getItem('job');
+    labelJob.classList.remove('red');
   } else {
     inputJob.value = '';
+    labelJob.classList.add('red');
   }
 
   if (localStorage.getItem('phone')) {
@@ -167,26 +188,31 @@ function init() {
   if (localStorage.getItem('mail')) {
     inputMail.value = localStorage.getItem('mail');
     iconMail.classList.remove('hidden');
+    labelMail.classList.remove('red');
   } else {
     inputMail.value = '';
+    labelMail.classList.add('red');
   }
 
   if (localStorage.getItem('github')) {
     inputGithub.value = localStorage.getItem('github');
     iconGithub.classList.remove('hidden');
+    labelGithub.classList.remove('red');
   } else {
     inputGithub.value = '';
+    labelGithub.classList.add('red');
   }
 
   if (localStorage.getItem('linkedin')) {
     inputLinkedin.value = localStorage.getItem('linkedin');
     iconLinkedin.classList.remove('hidden');
+    labelLinkedin.classList.remove('red');
   } else {
     inputLinkedin.value = '';
+    labelLinkedin.classList.add('red');
   }
 
   if (localStorage.getItem('palette')) {
-    //console.log(localStorage.getItem('palette'));
     palette2.removeAttribute('checked',false);
     palette1.removeAttribute('checked',false);
     palette3.removeAttribute('checked',false);
@@ -206,7 +232,6 @@ function init() {
   } else{
     palette1.setAttribute('checked',true);
     box.classList.add('cards__img-wrapper-op1');
-
   }
 
   if (localStorage.getItem('image')) {
@@ -221,4 +246,4 @@ function init() {
   }
 }
 
-window.onload = init;
+window.onload = init();

@@ -12,6 +12,8 @@ function reset(){
   setDefaultColors();
   setDefualtImage();
   disableTwitter();
+  cleanLocalStorage();
+  redlabels();
 }
 function hideIcons(){
   iconMail.classList.add('hidden');
@@ -54,5 +56,14 @@ function disableTwitter(){
   shareButton.classList.remove('greyButton');
   twitter.classList.add('share__hidden');
 }
-
+function cleanLocalStorage(){
+  localStorage.clear();
+}
+function redlabels(){
+  labelName.classList.add('red');
+  labelJob.classList.add('red');
+  labelMail.classList.add('red');
+  labelLinkedin.classList.add('red');
+  labelGithub.classList.add('red');
+}
 resetBtn.addEventListener('click', reset);
