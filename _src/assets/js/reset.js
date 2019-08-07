@@ -16,10 +16,10 @@ function reset(){
 
 
 function hideIcons(){
-  iconMail.classList.add('hidden_v');
-  iconPhone.classList.add('hidden_v');
-  iconLinkedin.classList.add('hidden_v');
-  iconGithub.classList.add('hidden_v');
+  iconMail.classList.add('hidden');
+  iconPhone.classList.add('hidden');
+  iconLinkedin.classList.add('hidden');
+  iconGithub.classList.add('hidden');
 }
 function setDefaultInputs(){
   textName.innerHTML = 'Nombre Apellido';

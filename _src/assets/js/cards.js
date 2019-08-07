@@ -57,44 +57,44 @@ function write(event) {
     textPhone.href = 'tel:' + inputValue;
     localStorage.setItem('phone', inputValue);
     if (inputValue === '') {
-      iconPhone.classList.add('hidden_v');
+      iconPhone.classList.add('hidden');
       localStorage.removeItem('phone');
     }
     else {
-      iconPhone.classList.remove('hidden_v');
+      iconPhone.classList.remove('hidden');
     }
   }
   else if (event.currentTarget.classList.contains('mail')) {
     textMail.href = 'mailto:' + inputValue;
     localStorage.setItem('mail', inputValue);
     if (inputValue === '') {
-      iconMail.classList.add('hidden_v');
+      iconMail.classList.add('hidden');
       localStorage.removeItem('mail');
     }
     else {
-      iconMail.classList.remove('hidden_v');
+      iconMail.classList.remove('hidden');
     }
   }
   else if (event.currentTarget.classList.contains('linkedin_input')) {
     textLinkedin.href = 'https://www.linkedin.com/in/' + inputValue;
     localStorage.setItem('linkedin', inputValue);
     if (inputValue === '') {
-      iconLinkedin.classList.add('hidden_v');
+      iconLinkedin.classList.add('hidden');
       localStorage.removeItem('linkedin');
     }
     else {
-      iconLinkedin.classList.remove('hidden_v');
+      iconLinkedin.classList.remove('hidden');
     }
   }
   else if (event.currentTarget.classList.contains('github_input')) {
     textGithub.href = 'https://github.com/' + inputValue;
     localStorage.setItem('github', inputValue);
     if (inputValue === '') {
-      iconGithub.classList.add('hidden_v');
+      iconGithub.classList.add('hidden');
       localStorage.removeItem('github');
     }
     else {
-      iconGithub.classList.remove('hidden_v');
+      iconGithub.classList.remove('hidden');
     }
   }
 }
@@ -166,28 +166,28 @@ function init() {
 
   if (localStorage.getItem('phone')) {
     inputPhone.value = localStorage.getItem('phone');
-    iconPhone.classList.remove('hidden_v');
+    iconPhone.classList.remove('hidden');
   } else {
     inputPhone.value = '';
   }
 
   if (localStorage.getItem('mail')) {
     inputMail.value = localStorage.getItem('mail');
-    iconMail.classList.remove('hidden_v');
+    iconMail.classList.remove('hidden');
   } else {
     inputMail.value = '';
   }
 
   if (localStorage.getItem('github')) {
     inputGithub.value = localStorage.getItem('github');
-    iconGithub.classList.remove('hidden_v');
+    iconGithub.classList.remove('hidden');
   } else {
     inputGithub.value = '';
   }
 
   if (localStorage.getItem('linkedin')) {
     inputLinkedin.value = localStorage.getItem('linkedin');
-    iconLinkedin.classList.remove('hidden_v');
+    iconLinkedin.classList.remove('hidden');
   } else {
     inputLinkedin.value = '';
   }
