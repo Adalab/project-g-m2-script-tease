@@ -12,8 +12,6 @@ const inputGithub = document.querySelector('.github_input');
 
 /*Variables que almacenan los destinos (donde se va a ver)*/
 
-// const textName = document.querySelector('.img-text__title');
-// const textJob = document.querySelector('.img-text__subtitle');
 const textMail = document.querySelector('.icon__mail');
 const textPhone = document.querySelector('.icon__mobile');
 const textLinkedin = document.querySelector('.icon__linkedin');
@@ -27,8 +25,6 @@ const iconLinkedin = document.querySelector('.icon3');
 const iconGithub = document.querySelector('.icon4');
 let paletteOption = 1;
 
-
-
 function write(event) {
 
   let inputValue = event.currentTarget.value;
@@ -38,7 +34,6 @@ function write(event) {
     if (inputValue !== '') {
       textName.innerHTML = inputValue;
       localStorage.setItem('name', inputValue);
-      /* Para que vuelva a poner algo si el campo se queda vacio */
     } else {
       textName.innerHTML = 'Nombre Apellido';
       localStorage.removeItem('name');
@@ -145,11 +140,9 @@ function changeColor(event) {
   }
 }
 
-
 palette1.addEventListener('click', changeColor);
 palette2.addEventListener('click', changeColor);
 palette3.addEventListener('click', changeColor);
-
 
 function init() {
   if (localStorage.getItem('name')) {
@@ -217,7 +210,6 @@ function init() {
   }
 
   if (localStorage.getItem('image')) {
-    //console.log(localStorage.getItem('image'));
     image.src = localStorage.getItem('image');
     preview.style.backgroundImage = `url(${localStorage.getItem('image')})`;
     cardsImage.style.backgroundImage = `url(${localStorage.getItem('image')})`;
@@ -226,7 +218,6 @@ function init() {
     image.src = defaultImage;
     preview.style.backgroundImage = `url(${defaultImage})`;
     cardsImage.style.backgroundImage = `url(${defaultImage})`;
-
   }
 }
 

@@ -5,7 +5,6 @@ const urlShare = document.querySelector('.link-twitter');
 
 let photoSend = '';
 
-
 function writeUrl(){
   if(!fr.result && !localStorage.getItem('image')){
     photoSend = defaultImage;
@@ -42,7 +41,6 @@ function writeUrl(){
     .then(data => showURL(data))
     .catch(function(error) { console.log(error); });
 }
-
 function showURL(data){
   if(data.success){
     urlShare.innerHTML = '<a class="twitter-url" href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
@@ -51,7 +49,6 @@ function showURL(data){
     urlShare.innerHTML = 'ERROR:' + data.error;
   }
 }
-
 function shareTwitter(cardURL){
   const urlTwitter = encodeURIComponent('He creado esta tarjeta con Awesome Profile Cards. ¿Qué te parece?');
 
@@ -60,4 +57,5 @@ function shareTwitter(cardURL){
   const finalURL = `https://twitter.com/intent/tweet?text=${urlTwitter}&url=${cardURL}&hashtags=${hastag}`;
   document.querySelector('.button-twitter').href = finalURL;
 }
+
 btn.addEventListener('click',writeUrl);

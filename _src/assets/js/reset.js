@@ -13,8 +13,6 @@ function reset(){
   setDefualtImage();
   disableTwitter();
 }
-
-
 function hideIcons(){
   iconMail.classList.add('hidden');
   iconPhone.classList.add('hidden');
@@ -51,7 +49,6 @@ function setDefualtImage(){
   image.src = defaultImage;
   image.alt = 'Imagen por defecto';
 }
-
 function disableTwitter(){
   shareButton.disabled = false;
   shareButton.classList.remove('greyButton');

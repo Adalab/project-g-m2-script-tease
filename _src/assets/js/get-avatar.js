@@ -18,14 +18,15 @@ const profileContainerImage = document.querySelector('.js__profile-container-ima
 
 function getImage(e){
   var myFile = e.currentTarget.files[0];
+  // eslint-disable-next-line no-console
   console.log('imagen select',e.currentTarget.files[0]);
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
+  // eslint-disable-next-line no-console
   console.log(e.currentTarget.files);
   localStorage.setItem('image',fr.result);
 
 }
-
 
 /**
  * Una vez tenemos los datos listos en el FR podemos
@@ -42,7 +43,6 @@ function writeImage() {
   profileImage.alt = `${inputName.value}`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
-
 
 /**
  * Genera un click automático en nuesto campo de tipo "file"
