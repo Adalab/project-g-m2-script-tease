@@ -13,7 +13,6 @@ const inputGithub = document.querySelector('.github_input');
 const labelName = document.querySelector('.name__label');
 const labelJob = document.querySelector('.job__label');
 const labelMail = document.querySelector('.mail__label');
-const labelPhone = document.querySelector('.phone__label');
 const labelLinkedin = document.querySelector('.linkedin__label');
 const labelGithub = document.querySelector('.github__label');
 
@@ -30,6 +29,7 @@ const iconMail = document.querySelector('.icon1');
 const iconPhone = document.querySelector('.icon2');
 const iconLinkedin = document.querySelector('.icon3');
 const iconGithub = document.querySelector('.icon4');
+// eslint-disable-next-line no-unused-vars
 let paletteOption = 1;
 
 function write(event) {
@@ -235,13 +235,19 @@ function init() {
   }
 
   if (localStorage.getItem('image')) {
+    // eslint-disable-next-line no-undef
     image.src = localStorage.getItem('image');
+    // eslint-disable-next-line no-undef
     preview.style.backgroundImage = `url(${localStorage.getItem('image')})`;
+    // eslint-disable-next-line no-undef
     cardsImage.style.backgroundImage = `url(${localStorage.getItem('image')})`;
 
   } else {
+    // eslint-disable-next-line no-undef
     image.src = defaultImage;
+    // eslint-disable-next-line no-undef
     preview.style.backgroundImage = `url(${defaultImage})`;
+    // eslint-disable-next-line no-undef
     cardsImage.style.backgroundImage = `url(${defaultImage})`;
   }
 }

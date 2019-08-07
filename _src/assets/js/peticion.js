@@ -6,27 +6,34 @@ const urlShare = document.querySelector('.link-twitter');
 let photoSend = '';
 
 function writeUrl(){
+  // eslint-disable-next-line no-undef
   if(!fr.result && !localStorage.getItem('image')){
+    // eslint-disable-next-line no-undef
     photoSend = defaultImage;
-    console.log('defecto',photoSend);
   }
+  // eslint-disable-next-line no-undef
   else if(!fr.result && localStorage.getItem('image')){
     photoSend = localStorage.getItem('image');
-    console.log('storage',photoSend);
   }
   else{
+    // eslint-disable-next-line no-undef
     photoSend = fr.result;
-
     localStorage.setItem('image',photoSend );
-    console.log('selected',photoSend);
   }
   const datos={
+    // eslint-disable-next-line no-undef
     'palette': paletteOption,
+    // eslint-disable-next-line no-undef
     'name': inputName.value,
+    // eslint-disable-next-line no-undef
     'job': inputJob.value,
+    // eslint-disable-next-line no-undef
     'phone': inputPhone.value,
+    // eslint-disable-next-line no-undef
     'email': inputMail.value ,
+    // eslint-disable-next-line no-undef
     'linkedin': inputLinkedin.value,
+    // eslint-disable-next-line no-undef
     'github': inputGithub.value,
     'photo': photoSend
   };
@@ -39,12 +46,18 @@ function writeUrl(){
   })
     .then(response => response.json())
     .then(data => showURL(data))
+    // eslint-disable-next-line no-console
     .catch(function(error) { console.log(error); });
 }
 function showURL(data){
   if(data.success){
     urlShare.innerHTML = '<a class="twitter-url" href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
     shareTwitter(data.cardURL);
+    // eslint-disable-next-line no-undef
+    showTwitterSection();
+    // eslint-disable-next-line no-undef
+    showTwitter();
+
   }else{
     urlShare.innerHTML = 'ERROR:' + data.error;
   }

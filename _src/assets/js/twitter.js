@@ -2,15 +2,16 @@
 
 const twitter = document.querySelector('.content__twitter-container');
 const shareButton = document.querySelector('.button-create');
-const cardForm = document.querySelector('.form__all-sections');
 
+// eslint-disable-next-line no-unused-vars
 function showTwitter(){
   shareButton.disabled = true;
   shareButton.classList.add('greyButton');
   twitter.classList.remove('share__hidden');
 }
-function preventFormSend(event){
-  event.preventDefault();
-}
+// function preventFormSend(event){
+//   event.preventDefault();
+// }
+// preventFormSend();
 
-shareButton.addEventListener('click', showTwitter);
+// shareButton.addEventListener('click', showTwitter);

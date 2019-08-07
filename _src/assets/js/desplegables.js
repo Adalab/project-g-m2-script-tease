@@ -2,9 +2,8 @@
 
 const containerClick = document.querySelectorAll('.containerClick-js');
 const containerColorsRoll = document.querySelectorAll('.rollContainer-js');
-const containerMother = document.querySelectorAll('.containerMother-js');
 const containerTwitter = document.querySelector('.hide-twitter');
-const createButton = document.querySelector('.share-button-create');
+// const createButton = document.querySelector('.share-button-create');
 
 function rollup (event){
   if (event.currentTarget.parentElement.classList.contains('open')){
@@ -20,9 +19,10 @@ function rollup (event){
 for(let i = 0; i < containerClick.length; i++){
   containerClick[i].addEventListener('click',rollup);
 }
+// eslint-disable-next-line no-unused-vars
 function showTwitterSection(){
   containerTwitter.classList.remove('hidden');
 }
 
-createButton.addEventListener('click', showTwitterSection);
+// createButton.addEventListener('click', showTwitterSection);
 
