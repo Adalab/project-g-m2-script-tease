@@ -3,11 +3,9 @@
 .img-btn__text{
   font-family: $OpenSans;
   font-size: $font-xs;
-  /*poner en variable */
   color: $color__img-button;
   text-transform: uppercase;
 }
-
 .img-text__title{
   font-family: $Montserrat;
   font-weight: $font-weight-bold;
@@ -15,11 +13,46 @@
   line-height: $line-height-md;
   color: $color__img-title;
 }
-
 .img-text__subtitle{
   font-family: $Montserrat;
   font-weight: $font-weight-normal;
   font-size: $font-sm;
   line-height: $line-height-md;
   color: $color__img-button;
+}
+.landing__main-title {
+  color: $color-landing-h2;
+  font-size: 19px;
+  text-align: center;
+  font-family: $merrifont;
+  font-weight: $font-weight-bold-merri;
+  @media all and (min-width:768px){
+    font-size: $font-l;
+  }
+}
+.landing__main-paragraph {
+  width: 265px;
+  color: $color-landing-p;
+  font-size: $font-xs;
+  text-align: center;
+  font-family: $OpenSans;
+  font-weight: $font-weight-normal;
+  @media all and (min-width:768px){
+    width: 331px;
+    font-size: $font-sm;
+  }
+}
+.landing__li-text{
+  font-family: $OpenSans;
+  font-size: $font-xs;
+  font-weight: $font-weight-normal;
+  color: $intermediate-grey;
+  @media all and (min-width:768px){
+    font-size: $font-sm;
+  }
+}
+.share__fieldset{
+  color: $intermediate-grey;
+  font-family: $OpenSans;
+  text-transform: uppercase;
 }

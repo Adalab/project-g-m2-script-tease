@@ -1,6 +1,5 @@
 .cards__img-section{
   background: $color-card-img-section-bg;
-  //height:100%;
   @include centered();
   @media all and (min-width:768px){
     min-width:329px;
@@ -18,9 +17,6 @@
   @media all and (min-width:768px)
   {position: relative;};
 }
-
-/* Esta es la caja sobre la que tenemos que aplicar los cambios de paleta */
-
 .cards__img-wrapper {
   width:240px;
   background-color: white;
@@ -48,7 +44,6 @@
       background-size:16px;
     }
 }
-
 .cards__img-wrapper-op1{
     .img__text-box{
       border-left: solid 5px $dirty-blue;
@@ -73,7 +68,6 @@
       border:solid 2px $hospital-green;  border:solid 2px $hospital-green;
     }
 }
-
 .cards__img-wrapper-op2{
   .img__text-box{
     border-left: solid 5px #bd1010;
@@ -98,7 +92,6 @@
     border:solid 2px #e95626;
   }
 }
-
 .cards__img-wrapper-op3{
   .img__text-box{
     border-left: solid 5px #eab052;
@@ -123,7 +116,6 @@
     border:solid 2px #a0c0cf;
   }
 }
-
 .reset{
   position: relative;
   color: $color-card-img-section-p;
@@ -146,26 +138,18 @@
   margin-bottom:4px;
   overflow: hidden;
   text-overflow: ellipsis;
-  // white-space: nowrap;
   word-wrap: break-word;
 }
 .img-text__subtitle{
   text-overflow: ellipsis;
-  // white-space: nowrap;
   word-wrap: break-word;
 }
-
-// cambios para select imagen
 .cards__img{
-  // background-image: url(https://thispersondoesnotexist.com/image);
   height:200px;
   @include bg-img();
   position:relative;
   overflow:hidden;
 }
-
-// Para ocultar la imagen de usuario por si nos da un error. o el formato no es el adecuado.
-
 .image{
   position: absolute;
   height: 1px;

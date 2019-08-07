@@ -1,4 +1,3 @@
-
 .design {
   padding: 0;
   color: $intermediate-grey;
@@ -23,7 +22,6 @@
   font-weight: 600;
   font-size: 18px;
   padding: 0 0 0 31px;
-  // display:inline-block;
 }
 .desing__title:before{
   content: "\f248";
@@ -34,20 +32,15 @@
   color: $dull-orange;
   font-weight: 400;
 }
-
-
 .desing__title:after {
   content: "\f107";
   position: absolute;
   right: 0;
   top: 0;
-  //height: 18px;
   font-weight: 900;
   font-family: "Font Awesome 5 Pro";
   color: $dark-grey;
-  //width: 16px;
 }
-
 .design__subtitle {
   font-weight: normal;
   font-size: 14px;
@@ -64,7 +57,6 @@
     margin-top: 25px;
   }
 }
-
 .color__group{
   margin-top: 4px;
 }
@@ -80,13 +72,11 @@
   padding-top: 24px;
   overflow: hidden;
 }
-
 .colors__row {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 .op2__container {
   margin: 20px 0;
 }
@@ -95,14 +85,4 @@
 }
 .open .desing__title:after{
   transform: rotate(-180deg);
-  }
-
-/*
-.open .rollContainer-js{
-    display: block;
-  }
-
-.rollContainer-js{
-  display:none;
-}*/
-
+}

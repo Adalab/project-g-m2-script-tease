@@ -3,7 +3,6 @@
   padding-top: 95px;
   background-color: $color-landing-bg;
 }
-
 .landing__header .container{
  @include centered();
  margin: 0 35px;
@@ -11,7 +10,6 @@
   margin: 0 175px;
  }
 }
-
 .landing__header-title{
  width: 250px;
  height: 1px;

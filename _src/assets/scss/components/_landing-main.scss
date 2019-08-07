@@ -7,7 +7,6 @@
     padding-top: 31px;
     min-height: 460px;
   }
-
 }
 .landing__main .container{
   @include centered();
@@ -15,39 +14,14 @@
   @media all and (min-width:768px){
     margin: 0px 175px;
   }
-
 }
-.landing__main-title {
-  color: $color-landing-h2;
-  font-size: 19px;
-  text-align: center;
-  font-family: $merrifont;
-  font-weight: $font-weight-bold-merri;
-  @media all and (min-width:768px){
-    font-size: $font-l;
-  }
-}
-.landing__main-paragraph {
-  width: 265px;
-  color: $color-landing-p;
-  font-size: $font-xs;
-  text-align: center;
-  font-family: $OpenSans;
-  font-weight: $font-weight-normal;
-  @media all and (min-width:768px){
-    width: 331px;
-    font-size: $font-sm;
-  }
-}
-
 .landing__main-list {
   @include clear-list();
   margin-top: 18px;
   padding: 10px 15px 17px;
-  @include centered ();
+  @include centered();
   border: $color-landing-list-border solid 1.5px;
   border-radius: 4px;
-
   @media all and (min-width:768px){
     margin-top: 27px;
     padding: 15px 20px 22px 20px;
@@ -55,55 +29,40 @@
     border-radius: 5px;
   }
 }
-
 .landing__main-li {
   @include centered();
   flex-direction: column;
   text-align: center;
   align-items: space-around;
-  color: $intermediate-grey;
   width: 60px;
   margin-right: 24px;
-  font-family: $OpenSans;
-  font-size: $font-xs;
-  font-weight: $font-weight-normal;
-
   @media all and (min-width:768px){
     width: 75px;
     margin-right: 30px;
-    font-size: $font-sm;
   }
 }
-
 .landing__-logo{
   text-align: center;
   color: $dull-orange;
   font-family: "Font Awesome 5 Pro";
 }
-
 .landing__icon-design:before{
   content: "\f248";
 }
-
 .landing__icon-fill:before{
   content: "\f11c";
 }
-
 .landing__icon-share:before{
   content: "\f1e0";
   font-weight: 900;
 }
-
 .li-share {
   margin-right: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centered();
   @media all and (min-width:768px){
     margin-right: 0px;
   }
 }
-
 .landing__design-logo {
   height: 26px;
   @media all and (min-width:768px){
@@ -121,25 +80,4 @@
   @media all and (min-width:768px){
     height: 29px;
   }
-}
-
-.landing__main-button {
-  @include centered();
-  width: 129px;
-  height: 42px;
-  background-color: $color-landing-button-bg;
-  text-decoration: none;
-  color: $color-landing-button-text;
-  border-radius: 21px;
-  font-size: $font-sm;
-  font-family: $OpenSans;
-  font-weight: $font-weight-semibold;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 30px;
-    @media all and (min-width:768px){
-      // bottom: 59px;
-      transform: translate(-50%);
-}
 }

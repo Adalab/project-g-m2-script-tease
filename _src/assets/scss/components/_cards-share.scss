@@ -1,11 +1,6 @@
 .fieldset{
   border: none;
 }
-.share__fieldset{
-  color: $intermediate-grey;
-  font-family: $OpenSans;
-  text-transform: uppercase;
-}
 .share__fieldset .container{
   border: 0px 1px;
   position:relative;
@@ -41,11 +36,9 @@
   position: absolute;
   right: 0;
   top: 0;
-  //height: 18px;
   font-weight: 900;
   font-family: "Font Awesome 5 Pro";
   color: $dark-grey;
-  //width: 16px;
 }
 .share-button-create{
   @include centered ();
@@ -79,7 +72,6 @@
   font-family: "Font Awesome 5 Pro";
   color: $white;
 }
-
 .greyButton{
   background-color: #d5d5d5;
 }
@@ -88,13 +80,10 @@
 }
 .open .share__title:after{
   transform: rotate(-180deg);
-
-
-
 }
 .rollContainer-js{
   display:none;
   }
   .open .rollContainer-js{
     display: block;
-  }
+}

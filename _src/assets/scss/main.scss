@@ -1,12 +1,11 @@
 
 @import 'core/_variables.scss';
+@import 'core/mixins';
 @import 'core/buttons';
 @import 'core/typography';
-@import 'core/mixins';
 @import 'layout/container';
 @import 'components/_footer.scss';
 @import 'components/_header.scss';
-@import 'components/_landing.scss';
 @import 'components/_landing-main.scss';
 @import 'components/cards-header';
 @import 'components/cards-img-section';
