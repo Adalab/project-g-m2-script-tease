@@ -1,11 +1,9 @@
 'use strict';
 
-// eslint-disable-next-line no-console
-console.log(' >>> Reset ready :D');
-
 const resetBtn = document.querySelector('.js__reset');
 
 function reset(){
+
   hideIcons();
   setDefaultInputs();
   setDefaultPalette();
@@ -100,4 +98,5 @@ function redlabels(){
   // eslint-disable-next-line no-undef
   labelGithub.classList.add('red');
 }
+
 resetBtn.addEventListener('click', reset);

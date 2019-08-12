@@ -2,8 +2,8 @@
   background: $color-card-img-section-bg;
   @include centered();
   @media all and (min-width:768px){
-    min-width:329px;
-    flex-grow:1;
+    min-width: 329px;
+    flex-grow: 1;
     border-radius: 6px;
   }
   @media all and (min-width:1024px){
@@ -18,30 +18,30 @@
   {position: relative;};
 }
 .cards__img-wrapper {
-  width:240px;
+  width: 240px;
   background-color: white;
   padding-top: 21px;
   box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0  rgba(0, 0, 0, 0.35);
   border-radius: 2px;
     .img__text-box{
       padding: 0 20px 0 9px;
-      margin-bottom:10px;
+      margin-bottom: 10px;
     }
     .icon__mobile{
       @include bg-img;
-      background-size:13px;
+      background-size: 13px;
     }
     .icon__mail{
       @include bg-img;
-      background-size:16px;
+      background-size: 16px;
     }
     .icon__linkedin{
       @include bg-img;
-      background-size:16px;
+      background-size: 16px;
     }
     .icon__github{
       @include bg-img;
-      background-size:16px;
+      background-size: 16px;
     }
 }
 .cards__img-wrapper-op1{
@@ -53,19 +53,19 @@
     }
     .icon__mobile{
       background-image: url(../images/mobile-alt-solid.svg);
-      border:solid 2px $hospital-green;
+      border: solid 2px $hospital-green;
     }
     .icon__mail{
       background-image: url(../images/envelope.svg);
-      border:solid 2px $hospital-green;
+      border: solid 2px $hospital-green;
     }
     .icon__linkedin{
       background-image: url(../images/linkedin-in-brands.svg);
-      border:solid 2px $hospital-green;
+      border: solid 2px $hospital-green;
     }
     .icon__github{
       background-image: url(../images/github-alt-brands.svg);
-      border:solid 2px $hospital-green;  border:solid 2px $hospital-green;
+      border: solid 2px $hospital-green;  border:solid 2px $hospital-green;
     }
 }
 .cards__img-wrapper-op2{
@@ -77,15 +77,15 @@
   }
   .icon__mobile{
     background-image: url(../images/mobile-alt-solid_red.svg);
-    border:solid 2px #e95626;
+    border: solid 2px #e95626;
   }
   .icon__mail{
     background-image: url(../images/envelope_red.svg);
-    border:solid 2px #e95626;
+    border: solid 2px #e95626;
   }
   .icon__linkedin{
     background-image: url(../images/linkedin-in-brands_red.svg);
-    border:solid 2px #e95626;
+    border: solid 2px #e95626;
   }
   .icon__github{
     background-image: url(../images/github-alt-brands_red.svg);
@@ -96,24 +96,24 @@
   .img__text-box{
     border-left: solid 5px #eab052;
     .img__title{
-      color:#3e5b65;
+      color: #3e5b65;
     }
   }
   .icon__mobile{
     background-image: url(../images/mobile-alt-solid_green.svg);
-    border:solid 2px #a0c0cf;
+    border: solid 2px #a0c0cf;
   }
   .icon__mail{
     background-image: url(../images/envelope_green.svg);
-    border:solid 2px #a0c0cf;
+    border: solid 2px #a0c0cf;
   }
   .icon__linkedin{
     background-image: url(../images/linkedin-in-brands_green.svg);
-    border:solid 2px #a0c0cf;
+    border: solid 2px #a0c0cf;
   }
   .icon__github{
     background-image: url(../images/github-alt-brands_green.svg);
-    border:solid 2px #a0c0cf;
+    border: solid 2px #a0c0cf;
   }
 }
 .reset{
@@ -121,12 +121,12 @@
   color: $color-card-img-section-p;
   @media all and (min-width:768px)
   {position: absolute;
-    top:-50px;
-    left:0;
+    top: -50px;
+    left: 0;
   };
 }
 .reset:before{
-  content:"\f2ed";
+  content: "\f2ed";
   position: absolute;
   top: 6px;
   left: 12px;
@@ -135,7 +135,7 @@
   color: $color-card-img-section-p;
 }
 .img__title{
-  margin-bottom:4px;
+  margin-bottom: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
@@ -145,10 +145,10 @@
   word-wrap: break-word;
 }
 .cards__img{
-  height:200px;
+  height: 200px;
   @include bg-img();
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 .image{
   position: absolute;
@@ -159,28 +159,28 @@
 }
 .img__icons-box{
   padding: 10px 0 12px 20px;
-  display:flex;
-  min-height:55px;
+  display: flex;
+  min-height: 55px;
 }
 .icons__list{
   @include clear-list();
-  display:flex;
+  display: flex;
 }
 .icon__anchor{
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 .icons__item{
-  border-radius:50%;
+  border-radius: 50%;
   margin-right: 10px;
-  padding-top:31px;
-  height:1px;
-  width:32px;
+  padding-top: 31px;
+  height: 1px;
+  width: 32px;
   @include centered();
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 .span__text{
-  position:absolute;
-  top:40px;
+  position: absolute;
+  top: 40px;
 }

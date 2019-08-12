@@ -1,6 +1,4 @@
 'use strict';
-// eslint-disable-next-line no-console
-console.log(' >>> Cards ready :D');
 
 /* Variables que almacenan los input, se podria hacer con un SelectorAll*/
 
@@ -35,14 +33,13 @@ let paletteOption = 1;
 function write(event) {
 
   let inputValue = event.currentTarget.value;
-
   if (event.currentTarget.classList.contains('name')) {
-
     if (inputValue !== '') {
       textName.innerHTML = inputValue;
       localStorage.setItem('name', inputValue);
       labelName.classList.remove('red');
-    } else {
+    }
+    else {
       textName.innerHTML = 'Nombre Apellido';
       localStorage.removeItem('name');
       labelName.classList.add('red');
@@ -53,7 +50,8 @@ function write(event) {
       textJob.innerHTML = inputValue;
       localStorage.setItem('job', inputValue);
       labelJob.classList.remove('red');
-    } else {
+    }
+    else {
       textJob.innerHTML = 'Front-end developer';
       localStorage.removeItem('job');
       labelJob.classList.add('red');
@@ -165,7 +163,8 @@ function init() {
   if (localStorage.getItem('name')) {
     inputName.value = localStorage.getItem('name');
     labelName.classList.remove('red');
-  } else {
+  }
+  else {
     inputName.value = '';
     labelName.classList.add('red');
   }
@@ -173,45 +172,45 @@ function init() {
   if (localStorage.getItem('job')) {
     inputJob.value = localStorage.getItem('job');
     labelJob.classList.remove('red');
-  } else {
+  }
+  else {
     inputJob.value = '';
     labelJob.classList.add('red');
   }
-
   if (localStorage.getItem('phone')) {
     inputPhone.value = localStorage.getItem('phone');
     iconPhone.classList.remove('hidden');
-  } else {
+  }
+  else {
     inputPhone.value = '';
   }
-
   if (localStorage.getItem('mail')) {
     inputMail.value = localStorage.getItem('mail');
     iconMail.classList.remove('hidden');
     labelMail.classList.remove('red');
-  } else {
+  }
+  else {
     inputMail.value = '';
     labelMail.classList.add('red');
   }
-
   if (localStorage.getItem('github')) {
     inputGithub.value = localStorage.getItem('github');
     iconGithub.classList.remove('hidden');
     labelGithub.classList.remove('red');
-  } else {
+  }
+  else {
     inputGithub.value = '';
     labelGithub.classList.add('red');
   }
-
   if (localStorage.getItem('linkedin')) {
     inputLinkedin.value = localStorage.getItem('linkedin');
     iconLinkedin.classList.remove('hidden');
     labelLinkedin.classList.remove('red');
-  } else {
+  }
+  else {
     inputLinkedin.value = '';
     labelLinkedin.classList.add('red');
   }
-
   if (localStorage.getItem('palette')) {
     palette2.removeAttribute('checked',false);
     palette1.removeAttribute('checked',false);
@@ -229,11 +228,11 @@ function init() {
       palette1.setAttribute('checked',true);
       box.classList.add('cards__img-wrapper-op1');
     }
-  } else{
+  }
+  else{
     palette1.setAttribute('checked',true);
     box.classList.add('cards__img-wrapper-op1');
   }
-
   if (localStorage.getItem('image')) {
     // eslint-disable-next-line no-undef
     image.src = localStorage.getItem('image');
@@ -241,8 +240,8 @@ function init() {
     preview.style.backgroundImage = `url(${localStorage.getItem('image')})`;
     // eslint-disable-next-line no-undef
     cardsImage.style.backgroundImage = `url(${localStorage.getItem('image')})`;
-
-  } else {
+  }
+  else {
     // eslint-disable-next-line no-undef
     image.src = defaultImage;
     // eslint-disable-next-line no-undef

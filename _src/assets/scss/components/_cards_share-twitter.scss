@@ -32,7 +32,7 @@
   font-family: $OpenSans;
   margin-top: 15px;
   margin-bottom: 30px;
-  position:relative;
+  position: relative;
   @include centered ();
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
@@ -42,14 +42,14 @@
 }
 .text-link-twitter{
   text-transform: lowercase;
-  padding-left:9px;
+  padding-left: 9px;
 }
 .text-link-twitter:before{
   text-transform: lowercase;
-  content:"\f099";
+  content: "\f099";
   position: absolute;
-  top:50%;
-  left:10px;
+  top: 50%;
+  left: 10px;
   transform: translateY(-50%);
   font-family: "Font Awesome 5 Brands";
   color: $white;
@@ -58,7 +58,7 @@
   text-transform: uppercase;
   padding-bottom: 30px;
   margin-left: 10px;
-  padding:0px;
+  padding: 0px;
 }
 .content__twitter-container{
   .line-bottom{

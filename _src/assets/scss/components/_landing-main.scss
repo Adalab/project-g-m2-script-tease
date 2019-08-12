@@ -3,7 +3,7 @@
   padding-top: 36px;
   background-color: $color-landing-bg;
   position: relative;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     padding-top: 31px;
     min-height: 460px;
   }
@@ -11,7 +11,7 @@
 .landing__main .container{
   @include centered();
   flex-direction: column;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     margin: 0px 175px;
   }
 }
@@ -22,7 +22,7 @@
   @include centered();
   border: $color-landing-list-border solid 1.5px;
   border-radius: 4px;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     margin-top: 27px;
     padding: 15px 20px 22px 20px;
     border: $color-landing-list-border solid 2px;
@@ -36,7 +36,7 @@
   align-items: space-around;
   width: 60px;
   margin-right: 24px;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     width: 75px;
     margin-right: 30px;
   }
@@ -59,25 +59,25 @@
 .li-share {
   margin-right: 0px;
   @include centered();
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     margin-right: 0px;
   }
 }
 .landing__design-logo {
   height: 26px;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     height: 29px;
   }
 }
 .landing__fill-logo {
   height: 26px;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     height: 29px;
   }
 }
 .landing__share-logo {
   height: 26px;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px){
     height: 29px;
   }
 }

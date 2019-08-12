@@ -3,7 +3,7 @@
 }
 .share__fieldset .container{
   border: 0px 1px;
-  position:relative;
+  position: relative;
 
   @media all and (min-width:768px){
       margin-right: 30px;
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top:10px;
+  margin-top: 10px;
   padding-bottom: 7px;
 }
 .share__title{
@@ -23,7 +23,7 @@
   padding-left: 28px;
 }
 .share__title:before{
-  content:"\f1e0";
+  content: "\f1e0";
   position: absolute;
   top: 0;
   left: 0;
@@ -56,17 +56,17 @@
   text-transform: uppercase;
   border-radius: 12px;
   @include centered ();
-  position:relative;
+  position: relative;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
 .share_button-icon{
-  padding-left:34px;
+  padding-left: 34px;
 }
 .share_button-icon:before{
-  content:"\f2bb";
+  content: "\f2bb";
   position: absolute;
-  top:50%;
-  left:17px;
+  top: 50%;
+  left: 17px;
   transform: translateY(-50%);
   font-weight: 400;
   font-family: "Font Awesome 5 Pro";
@@ -82,7 +82,7 @@
   transform: rotate(-180deg);
 }
 .rollContainer-js{
-  display:none;
+  display: none;
   }
   .open .rollContainer-js{
     display: block;

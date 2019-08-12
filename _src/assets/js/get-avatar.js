@@ -15,47 +15,44 @@ const profileContainerImage = document.querySelector('.js__profile-container-ima
  * al tener los datos listos
  * @param {evento} e
  */
-
 function getImage(e){
+
   var myFile = e.currentTarget.files[0];
-  // eslint-disable-next-line no-console
-  console.log('imagen select',e.currentTarget.files[0]);
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
   // eslint-disable-next-line no-console
-  console.log(e.currentTarget.files);
   localStorage.setItem('image',fr.result);
-
 }
-
 /**
  * Una vez tenemos los datos listos en el FR podemos
  * trabajar con ellos ;)
  */
 
-function writeImage() {
+function writeImage(){
+
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado
    */
   profileContainerImage.style.backgroundImage = `url(${fr.result})`;
   profileImage.src = fr.result;
   localStorage.setItem('image',fr.result);
+  // eslint-disable-next-line no-undef
   profileImage.alt = `${inputName.value}`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
-
 /**
  * Genera un click automático en nuesto campo de tipo "file"
  * que está oculto
  */
-function fakeFileClick() {
+function fakeFileClick(){
+
   fileField.click();
 }
-
 /**
  * Añadimos los listeners necesarios:
  * - al botón visible para generar el click automático
  * - al campo oculto para cuando cambie su value
  */
+
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);

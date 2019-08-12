@@ -7,20 +7,20 @@ let photoSend = '';
 
 function writeUrl(){
   // eslint-disable-next-line no-undef
-  if(!fr.result && !localStorage.getItem('image')){
+  if (!fr.result && !localStorage.getItem('image')){
     // eslint-disable-next-line no-undef
     photoSend = defaultImage;
   }
   // eslint-disable-next-line no-undef
-  else if(!fr.result && localStorage.getItem('image')){
+  else if (!fr.result && localStorage.getItem('image')){
     photoSend = localStorage.getItem('image');
   }
-  else{
+  else {
     // eslint-disable-next-line no-undef
     photoSend = fr.result;
     localStorage.setItem('image',photoSend );
   }
-  const datos={
+  const datos = {
     // eslint-disable-next-line no-undef
     'palette': paletteOption,
     // eslint-disable-next-line no-undef
@@ -37,20 +37,21 @@ function writeUrl(){
     'github': inputGithub.value,
     'photo': photoSend
   };
-  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+  fetch ('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
     body: JSON.stringify(datos),
     headers: {
       'content-type': 'application/json'
     },
   })
-    .then(response => response.json())
-    .then(data => showURL(data))
+    .then (response => response.json())
+    .then (data => showURL(data))
     // eslint-disable-next-line no-console
-    .catch(function(error) { console.log(error); });
+    .catch (function(error) { console.log(error); });
 }
 function showURL(data){
-  if(data.success){
+
+  if (data.success){
     urlShare.innerHTML = '<a class="twitter-url" href=' + data.cardURL + ' target="_blank">' + data.cardURL + '</a>';
     shareTwitter(data.cardURL);
     // eslint-disable-next-line no-undef
@@ -58,15 +59,15 @@ function showURL(data){
     // eslint-disable-next-line no-undef
     showTwitter();
 
-  }else{
+  }
+  else {
     urlShare.innerHTML = 'ERROR:' + data.error;
   }
 }
 function shareTwitter(cardURL){
+
   const urlTwitter = encodeURIComponent('He creado esta tarjeta con Awesome Profile Cards. ¿Qué te parece?');
-
   const hastag = encodeURIComponent('adalab,script-tease,adalaber,frontEnd,awesomeCards');
-
   const finalURL = `https://twitter.com/intent/tweet?text=${urlTwitter}&url=${cardURL}&hashtags=${hastag}`;
   document.querySelector('.button-twitter').href = finalURL;
 }

@@ -44,13 +44,13 @@
 .design__subtitle {
   font-weight: normal;
   font-size: 14px;
-  margin-left:19px;
+  margin-left: 19px;
   @media all and (min-width:768px){
     margin-left: 0;
   }
 }
 .colors__container{
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin-top: 28px;
   @media all and (min-width:768px){

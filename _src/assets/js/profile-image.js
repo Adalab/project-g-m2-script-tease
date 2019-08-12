@@ -1,8 +1,5 @@
 'use strict';
 
-// eslint-disable-next-line no-console
-console.log(' >> Image_default ready');
-
 const cardsImage = document.querySelector('.cards__img');
 const image = document.querySelector('.image');
 const preview = document.querySelector('.js__profile-preview');
