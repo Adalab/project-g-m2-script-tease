@@ -1,7 +1,5 @@
 'use strict';
 
-/* Variables que almacenan los input, se podria hacer con un SelectorAll*/
-
 const inputName = document.querySelector('.name');
 const inputJob = document.querySelector('.job');
 const inputMail = document.querySelector('.mail');
@@ -14,21 +12,16 @@ const labelMail = document.querySelector('.mail__label');
 const labelLinkedin = document.querySelector('.linkedin__label');
 const labelGithub = document.querySelector('.github__label');
 
-/*Variables que almacenan los destinos (donde se va a ver)*/
-
 const textMail = document.querySelector('.icon__mail');
 const textPhone = document.querySelector('.icon__mobile');
 const textLinkedin = document.querySelector('.icon__linkedin');
 const textGithub = document.querySelector('.icon__github');
-
 const textName = document.querySelector('.img-text__title');
 const textJob = document.querySelector('.img-text__subtitle');
 const iconMail = document.querySelector('.icon1');
 const iconPhone = document.querySelector('.icon2');
 const iconLinkedin = document.querySelector('.icon3');
 const iconGithub = document.querySelector('.icon4');
-// eslint-disable-next-line no-unused-vars
-let paletteOption = 1;
 
 function write(event) {
 
@@ -108,7 +101,7 @@ function write(event) {
     }
   }
 }
-
+let paletteOption = 1;
 inputName.addEventListener('keyup', write);
 inputJob.addEventListener('keyup', write);
 inputMail.addEventListener('keyup', write);
