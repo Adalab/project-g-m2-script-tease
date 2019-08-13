@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    
     <head>
         <meta charset="UTF-8">
         <title>Cards awesome-Create</title>
@@ -9,12 +9,14 @@
         rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
-
+    
     <body class="cards-wrapper">
         <div class="cards__main-wrapper">
             <header class="cards__header">
                 <div class="container">
-                     <h1 class="cards__header-title">Awesome Profile-Cards</h1>
+                     <h1 class="cards__header-title">
+      Awesome Profile-Cards
+    </h1>
 
                     <div class="landing__header-logo"></div>
                 </div>
@@ -24,7 +26,7 @@
                     <section class="cards__img-section">
                         <div class="container">
                             <div class="cards__wrapper">
-                                <button type="button" class="btn img-btn__text cards__img-button reset js__reset">reset</button>
+                                <button type="button" class="btn cards__img-button reset js__reset img-btn__text">reset</button>
                                 <div class="cards__img-wrapper cards__img-wrapper-op1">
                                     <div class="img__text-box">
                                          <h2 class="img__title img-text__title">
@@ -40,41 +42,28 @@
                                         <ul class="icons__list img-text__title">
                                             <li class="icon1 hidden"> <a class="icon__anchor icons__item icon__mail icon__mail-blue " href=""
                                                 target="__blank">
-                <span class="span__text">Si quieres enviarme un mail, visita este enlace.</span>
+                <span class="span__text">
+                  Si quieres enviarme un mail, visita este enlace.
+                </span>
               </a>
 
                                             </li>
                                             <li class="icon2 hidden"> <a class="icon__anchor icons__item icon__mobile icon__mobile-blue  " href=""
                                                 target="__blank">
-                <span class="span__text"
-                  >Si quieres llamarme, este es mi número.</span
-                >
+                <span class="span__text">Si quieres llamarme, este es mi número.</span>
               </a>
 
-                                        </li>
-                                        <li class="icon2"> <a class="icon__anchor icons__item icon__mail icon__mail-blue hidden"
-                                            href="" target="__blank">
-                <span class="span__text"
-                  >Si quieres enviarme un mail, visita este enlace.</span
-                >
+                                            </li>
+                                            <li class="icon3 hidden"> <a class="icon__anchor icons__item icon__linkedin icon__linkedin-blue "
+                                                href="" target="__blank">
+                <span class="span__text">Si quieres ver mi perfil de linkedIn, visita este
+                  enlace.</span>
               </a>
 
-                                        </li>
-                                        <li class="icon3"> <a class="icon__anchor icons__item icon__linkedin icon__linkedin-blue hidden"
-                                            href="" target="__blank">
-                <span class="span__text"
-                  >Si quieres ver mi perfil de linkedIn, visita este
-                  enlace.</span
-                >
-              </a>
-
-                                        </li>
-                                        <li class="icon4"> <a class="icon__anchor icons__item icon__github icon__github-blue  hidden"
-                                            href="http://" target="__blank">
-                <span class="span__text"
-                  >Si quieres ver mi perfil de linkedIn, visita este
-                  enlace.</span
-                >
+                                            </li>
+                                            <li class="icon4 hidden"> <a class="icon__anchor icons__item icon__github icon__github-blue  " href="http://"
+                                                target="__blank">
+                <span class="span__text">Si quieres ver mi perfil de linkedIn, visita este enlace.</span>
               </a>
 
                                             </li>
@@ -86,7 +75,6 @@
                     </section>
                     <div class="form__wrapper">
                         <fieldset class="design">
-                            <!-- /* Cambiar el h2 por un div y trabajar con los paddings */ -->
                             <div class="container containerMother-js open" id="design">
                                 <div class="design-title__container containerClick-js" id="design">
                                      <h2 class="desing__title">Diseña</h2>
@@ -139,10 +127,10 @@
 
                                 </div>
                                 <div class="form__fieldset-main_content rollContainer-js">
-                                    <label for="name" class="form__fieldset-content">Nombre completo*</label>
+                                    <label for="name" class="form__fieldset-content name__label required">Nombre completo*</label>
                                     <input type="text" class="form__fieldset-content-gap name"
                                     id="name" name="name" placeholder="Ej: Sally Jill" required />
-                                    <label for="position" class="form__fieldset-content">Puesto*</label>
+                                    <label for="position" class="form__fieldset-content job__label required">Puesto*</label>
                                     <input type="text" class="form__fieldset-content-gap gap2 job"
                                     id="position" name="position" placeholder="Ej: Front-end unicorn" required
                                     />
@@ -150,21 +138,21 @@
                                         <p class="form__fieldset-add_img-text">Imagen de perfil</p>
                                         <button class="form__fieldset-add_img-button js__profile-trigger"
                                         type="button" name="add_img">Añadir imagen</button>
-                                        <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn"
-                                        required>
+                                        <input type="file" name="" id="img-selector" class="hidden js__profile-upload-btn"
+                                        required />
                                         <div class="form__fieldset-add_img-mini_container js__profile-preview"></div>
                                     </div>
-                                    <label for="email" class="form__fieldset-content">Email*</label>
+                                    <label for="email" class="form__fieldset-content mail__label required">Email*</label>
                                     <input type="email" class="form__fieldset-content-gap mail"
                                     id="email" name="email" placeholder="Ej: sally-hill@gmail.com" required
                                     />
                                     <label for="telf" class="form__fieldset-content">Teléfono</label>
                                     <input type="tel" class="form__fieldset-content-gap phone"
                                     id="telf" name="telf" placeholder="Ej: 555-55-55-55" />
-                                    <label for="linkedin" class="form__fieldset-content">Linkedin*</label>
+                                    <label for="linkedin" class="form__fieldset-content linkedin__label required">Linkedin*</label>
                                     <input type="text" class="form__fieldset-content-gap linkedin_input"
                                     id="linkedin" name="linkedin" placeholder="Ej: sally.hill" required />
-                                    <label for="github" class="form__fieldset-content">Github*</label>
+                                    <label for="github" class="form__fieldset-content github__label required">Github*</label>
                                     <input type="text" class="form__fieldset-content-gap github_input"
                                     id="github" name="github" placeholder="Ej: @sally-hill" required />
                                 </div>
@@ -188,7 +176,7 @@
                                 </div>
                                 <div class="line-bottom"></div>
                             </div>
-                            <div class="content__twitter-container hide-twitter">
+                            <div class="content__twitter-container hide-twitter hidden">
                                 <div class="share__text-twitter">
                                     <p class="share__title-twitter">La tarjeta ha sido creada:</p>
                                     <div class="link-twitter"></div> <a class="button-twitter" target="_blank">

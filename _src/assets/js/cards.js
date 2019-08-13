@@ -162,6 +162,7 @@ palette3.addEventListener('click', changeColor);
 function init() {
   if (localStorage.getItem('name')) {
     inputName.value = localStorage.getItem('name');
+    textName.innerHTML = localStorage.getItem('name');
     labelName.classList.remove('red');
   }
   else {
@@ -170,6 +171,7 @@ function init() {
   }
 
   if (localStorage.getItem('job')) {
+    textJob.innerHTML = localStorage.getItem('job');
     inputJob.value = localStorage.getItem('job');
     labelJob.classList.remove('red');
   }
@@ -178,6 +180,7 @@ function init() {
     labelJob.classList.add('red');
   }
   if (localStorage.getItem('phone')) {
+    textPhone.href = 'tel:' + localStorage.getItem('phone');
     inputPhone.value = localStorage.getItem('phone');
     iconPhone.classList.remove('hidden');
   }
@@ -185,6 +188,7 @@ function init() {
     inputPhone.value = '';
   }
   if (localStorage.getItem('mail')) {
+    textMail.href = 'mailto:' + localStorage.getItem('mail');
     inputMail.value = localStorage.getItem('mail');
     iconMail.classList.remove('hidden');
     labelMail.classList.remove('red');
@@ -194,6 +198,7 @@ function init() {
     labelMail.classList.add('red');
   }
   if (localStorage.getItem('github')) {
+    textGithub.href = 'https://github.com/' + localStorage.getItem('github');
     inputGithub.value = localStorage.getItem('github');
     iconGithub.classList.remove('hidden');
     labelGithub.classList.remove('red');
@@ -203,6 +208,7 @@ function init() {
     labelGithub.classList.add('red');
   }
   if (localStorage.getItem('linkedin')) {
+    textLinkedin.href = 'https://www.linkedin.com/in/' + localStorage.getItem('linkedin');
     inputLinkedin.value = localStorage.getItem('linkedin');
     iconLinkedin.classList.remove('hidden');
     labelLinkedin.classList.remove('red');
