@@ -5,7 +5,8 @@ const urlShare = document.querySelector('.link-twitter');
 
 let photoSend = '';
 
-function writeUrl(){
+function writeUrl(event){
+  event.preventDefault();
   // eslint-disable-next-line no-undef
   if (!fr.result && !localStorage.getItem('image')){
     // eslint-disable-next-line no-undef
